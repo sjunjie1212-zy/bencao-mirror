@@ -1,0 +1,1 @@
+Known binary blob candidates from earlier connector upload attempts: 06eb237ce521ce83a72d14943ead94cbd9824ba7, eaf8542d000b9e34dc8971d2f9705efc66ac9a6c, 250884f8b8e6433148d178d937d39db8db3d0e58, 2011e9b2eb13d77af7b1b01677a36876f4e8200d, efd5e5bf3b1906cd74461b7473b76c54f93a3520. These are not referenced by production until verified.
