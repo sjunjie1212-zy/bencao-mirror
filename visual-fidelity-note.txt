@@ -1,0 +1,2 @@
+BENCAO 3.6.5 Visual Fidelity Fix
+Target: replace compact low-resolution sprite resources with 1200x800+ verified image assets while preserving Aroma Field #E7DFD2 / .72 / .68 / .64.
