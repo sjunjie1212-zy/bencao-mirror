@@ -1,0 +1,134 @@
+
+    hero:'sprite:bc006:0', origin:'sprite:bc006:0', material:'sprite:bc006:5', detail1:'sprite:bc006:2', detail2:'sprite:bc006:3', atlasImages:[['sprite:bc006:1','叶枝全貌','植株挺立 · 叶片对生 · 叶形宽卵 · 叶缘锯齿'],['sprite:bc006:2','叶片表面','叶面紫红 · 脉络清晰 · 具细小腺点'],['sprite:bc006:3','叶片背面','叶背色较浅 · 脉络隆起 · 密被短柔毛'],['sprite:bc006:4','茎与叶节','茎呈紫绿色 · 具细柔毛 · 叶对生于节上'],['sprite:bc006:5','干燥叶材','干燥后叶片卷曲 · 质地轻脆 · 色泽紫褐']], heroPos:'50% 45%',
+    today:['先别只看它的紫。','沿着叶脉走一次。'],
+    identity:{lead:'它来自紫苏的叶，或带嫩枝的叶。',sub:'鲜叶有清楚的锯齿、叶脉和上下表面；干燥后会皱缩卷曲，颜色与脆度一起改变。',originTitle:'一片叶先有方向。',originText:'叶尖、叶基、圆锯齿与中脉共同建立轮廓；不同植株可呈紫色，或上表面偏绿、下表面偏紫。',materialTitle:'干燥把一片展开的叶变成卷曲薄片。',materialText:'叶片失水后容易皱缩、破碎，边缘和叶脉仍是辨认材料状态的重要视觉线索。',note:'当前紫苏 Material Atlas 使用叶片结构视觉研究图作为摄影占位；正式发布前应补拍可核验的干燥紫苏叶材料。'},
+    evidence:{mark:'药', title:'Perillae Folium', lines:['干燥叶（或带嫩枝）','辛，温 · 肺、脾'], note:'传统 / 2025《中国药典》体系'},
+    atlas:{lead:'紫苏的材料感来自一张薄叶上的很多方向：叶脉、锯齿、毛与卷曲。',portrait:'先看整片叶的轮廓。干燥材料的正式摄影位在发布前补拍，这里只作为叶片结构参照。',structureTitle:'上表面与下表面，不只是颜色不同。',structureNote:'叶脉凹凸、疏毛与边缘锯齿会改变指尖沿着叶片移动时的感觉。',d1:['叶背结构','叶脉 · 疏毛 · 凹凸'],d2:['叶片轮廓','锯齿 · 叶尖 · 颜色'],specimen:['叶脉','锯齿边缘','整片轮廓']},
+    aroma:['紫苏叶','青绿 · 辛香','草本 · 微厚'], sensory:'紫苏叶 · 青绿 · 辛香 · 草本',
+    gate:'来源明确的真实紫苏叶', action2:'轻轻折动叶缘，再闻一次。',
+    look:['叶脉','锯齿','叶背','颜色','卷曲','叶柄','其他'], touch:['薄','脆','粗','干','轻','略绒','说不清'], first:['清','辛香','绿','厚','说不清'], assoc:['青草','香草','辛香','叶片','其他','说不清'], compare:['更辛','更草本','更深','更清','变化不明显','说不清'],
+    sources:[{label:'BC006 Hero + Material Atlas：BENCAO Photographic Direction 01 原型 Visual Study；不是植物学鉴定或药材质量证据。正式公开版需以自有、来源明确且可核验材料重拍。',href:''}]
+  }
+];
+
+const $ = (s,root=document)=>root.querySelector(s);
+const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
+const herbGrid = $('#herbGrid');
+const catalogueView = $('#catalogueView');
+const detailView = $('#detailView');
+const blackout = $('#blackout');
+let activeHerb = null;
+let encState = null;
+let advanceTimer = null;
+let encStepStartedAt = null;
+
+function pad2(n){ return String(n).padStart(2,'0'); }
+function countKey(id){ return `${LS}:${id}:count`; }
+function getCount(id){ return Number(localStorage.getItem(countKey(id)) || 0); }
+function setCount(id,n){ localStorage.setItem(countKey(id),String(n)); }
+function esc(s=''){ return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c])); }
+function img(src,alt,extra=''){
+  if(String(src).startsWith('sprite:')){
+    const [,herb,cell]=String(src).split(':');
+    return `<span class="bencao-sprite" data-sprite="${herb}" data-cell="${cell}" role="img" aria-label="${esc(alt)}"></span>`;
+  }
+  return `<img src="${src}" alt="${esc(alt)}" loading="lazy" ${extra} onerror="this.classList.add('image-failed')">`;
+}
+const SPRITE_POS={0:'0% 0%',1:'50% 0%',2:'100% 0%',3:'0% 100%',4:'50% 100%',5:'100% 100%'};
+const spriteCache=new Map();
+async function spriteDataUrl(herb){
+  if(spriteCache.has(herb)) return spriteCache.get(herb);
+  const promise=Promise.all(Array.from({length:8},(_,i)=>i).map(async i=>{
+    const r=await fetch(`./assets/${herb}-${String(i).padStart(2,'0')}.b64?v=${VERSION}`,{cache:'force-cache'});
+    if(!r.ok) throw new Error(`sprite ${herb} ${i}`);
+    return (await r.text()).trim();
+  })).then(parts=>`data:image/webp;base64,${parts.join('')}`);
+  spriteCache.set(herb,promise);
+  return promise;
+}
+async function hydrateSprites(root=document){
+  const nodes=[...root.querySelectorAll('.bencao-sprite:not([data-ready])')];
+  await Promise.all(nodes.map(async el=>{
+    try{
+      const herb=el.dataset.sprite;
+      const url=await spriteDataUrl(herb);
+      el.style.backgroundImage=`url(${url})`;
+      el.style.backgroundPosition=SPRITE_POS[Number(el.dataset.cell)]||'0% 0%';
+      el.dataset.ready='1';
+    }catch(_){ el.classList.add('image-failed'); }
+  }));
+}
+
+function rgbChannels(hex){
+  const v=String(hex||'').replace('#','').trim();
+  const full=v.length===3?v.split('').map(x=>x+x).join(''):v;
+  if(!/^[0-9a-fA-F]{6}$/.test(full)) return [120,120,120];
+  return [parseInt(full.slice(0,2),16),parseInt(full.slice(2,4),16),parseInt(full.slice(4,6),16)];
+}
+function rgba(hex,a){ const [r,g,b]=rgbChannels(hex); return `rgba(${r},${g},${b},${a})`; }
+function aromaFieldStyle(colors){
+  const [opening,middle,drydown]=colors;
+  return [
+    'background-color:#e7dfd2',
+    `background-image:radial-gradient(ellipse 42% 38% at 23% 37%,${rgba(opening,.72)} 0%,${rgba(opening,.50)} 34%,${rgba(opening,.25)} 58%,${rgba(opening,0)} 79%),radial-gradient(ellipse 39% 35% at 54% 55%,${rgba(middle,.68)} 0%,${rgba(middle,.46)} 35%,${rgba(middle,.23)} 59%,${rgba(middle,0)} 80%),radial-gradient(ellipse 37% 33% at 79% 69%,${rgba(drydown,.64)} 0%,${rgba(drydown,.43)} 36%,${rgba(drydown,.21)} 60%,${rgba(drydown,0)} 81%)`,
+    'background-repeat:no-repeat'
+  ].join(';');
+}
+
+function track(event, herbId=activeHerb?.id, data={}){
+  try{
+    const key=`${LS}:events`;
+    const arr=JSON.parse(localStorage.getItem(key)||'[]');
+    arr.push({event,herb:herbId||null,at:new Date().toISOString(),...data});
+    localStorage.setItem(key,JSON.stringify(arr.slice(-250)));
+  }catch{}
+}
+
+function renderCatalogue(){
+  herbGrid.innerHTML = HERBS.map(h=>{
+    const c=getCount(h.id);
+    return `<button class="herb-card" type="button" data-herb="${h.id}" style="--herb-color:${h.color}">
+      <div class="herb-card-figure">${img(h.hero,`${h.name}原植物视觉研究图`,'loading="eager"')}</div>
+      <div class="herb-card-body">
+        <div class="herb-card-title"><span class="herb-card-id">${h.no}</span><h3>${h.name}</h3><span class="herb-card-pinyin">${h.pinyin}</span></div>
+        <div class="herb-card-latin">${h.latinDrug}</div>
+        <div class="herb-card-link">进入探索 → ${c?`<span class="herb-card-seen">已遇见 ${pad2(c)}</span>`:''}</div>
+      </div>
+    </button>`;
+  }).join('');
+  $$('.herb-card',herbGrid).forEach(b=>b.addEventListener('click',()=>openHerb(b.dataset.herb)));
+  const met=HERBS.filter(h=>getCount(h.id)>0).length;
+  $('#catalogueCount').textContent=`已遇见 ${met} / ${HERBS.length}`;
+}
+
+function renderDetail(h){
+  const idx=HERBS.findIndex(x=>x.id===h.id);
+  const next=HERBS[(idx+1)%HERBS.length];
+  detailView.style.setProperty('--herb-color',h.color);
+  const aromaColors=h.aromaColors || [h.color,h.color,h.color];
+  detailView.innerHTML = `
+    <div class="detail-rail"><button type="button" data-go-catalogue>← 本草目录</button><button type="button" data-jump="today">TODAY</button><button type="button" data-jump="identity">IDENTITY</button><button type="button" data-jump="atlas">ATLAS</button><button type="button" data-jump="aroma">AROMA</button></div>
+    <section class="plate today" id="today">
+      <header class="folio"><span>BENCAO / ${VERSION}</span><span>${h.no} · TODAY</span></header>
+      <div class="today-copy"><p class="eyebrow">${h.plant.toUpperCase()} / SPECIMEN ${h.no.slice(-3)}</p><h1>${h.name}</h1><p class="latin">${h.latinDrug}</p>
+        <div class="today-statement"><p>${h.today[0]}</p><p>${h.today[1]}</p><button type="button" class="text-cta" data-jump="identity">靠近一点 →</button></div>
+      </div>
+      <figure class="today-figure">${img(h.hero,`${h.name}原植物视觉研究图`,'loading="eager"')}<figcaption class="image-caption"><span>BOTANICAL IDENTITY / 原植物</span><span>${h.no}</span></figcaption></figure>
+    </section>
+
+    <section class="plate identity" id="identity">
+      <header class="folio"><span>${h.no} / IDENTITY</span><span>ORIGIN → MATERIAL</span></header>
+      <div class="identity-head"><p class="eyebrow">IDENTITY / SPECIMEN READING</p><h2>${h.identity.lead}</h2><p>${h.identity.sub}</p></div>
+      <div class="identity-grid">
+        <article class="identity-chapter"><div class="chapter-meta">01 / ORIGIN · 来源</div><figure>${img(h.origin,`${h.name}原植物或新鲜状态视觉研究图`)}</figure><h3>${h.identity.originTitle}</h3><p>${h.identity.originText}</p></article>
+        <article class="identity-chapter"><div class="chapter-meta">02 / MATERIAL · 材料</div><figure>${img(h.material,`${h.name}材料视觉研究图`)}</figure><h3>${h.identity.materialTitle}</h3><p>${h.identity.materialText}</p></article>
+      </div>
+      <p class="atlas-disclaimer">${h.identity.note}</p>
+      <aside class="evidence-note ${h.evidence.mark?'':'no-mark'}">${h.evidence.mark?`<span class="evidence-mark">${h.evidence.mark}</span>`:''}<div><p><strong>${h.evidence.title}</strong></p>${h.evidence.lines.map(x=>`<p>${x}</p>`).join('')}<small>${h.evidence.note}</small></div></aside>
+      <button type="button" class="text-cta" data-jump="atlas">进入材料图谱 →</button>
+    </section>
+
+    <section class="plate atlas" id="atlas">
+      <header class="folio"><span>${h.no} / MATERIAL ATLAS</span><span>MATERIAL PORTRAIT → STRUCTURE → PLATE</span></header>
+      <div class="atlas-head"><p class="eyebrow">VISUAL STUDY / 图像研究</p><h2>${h.name} · 材料图谱</h2><p>${h.atlas.lead}</p></div>
+      <div class="atlas-portrait"><figure>${img(h.material,`${h.name}材料整体视觉研究图`)}</figure><div class="atlas-portrait-copy"><p class="eyebrow">01 / MATERIAL PORTRAIT</p><h3>先看
