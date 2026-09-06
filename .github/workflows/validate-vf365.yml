@@ -1,0 +1,33 @@
+name: Validate BENCAO 3.6.5 visual assets
+on:
+  push:
+    branches: [visual-fidelity-365-q35]
+    paths:
+      - 'assets-hd/**'
+      - '.github/workflows/validate-vf365.yml'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python -m pip install pillow
+      - name: Validate available HD sprites
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import base64, io
+          from pathlib import Path
+          from PIL import Image
+          found=0
+          for p in sorted(Path('assets-hd').glob('bc*.b64')):
+              raw=base64.b64decode(p.read_text().strip(), validate=True)
+              im=Image.open(io.BytesIO(raw)); im.load()
+              print(p.name, im.format, im.size, len(raw))
+              assert im.format == 'WEBP'
+              assert im.size == (1200,800)
+              assert len(raw) > 30000
+              found += 1
+          assert found >= 1
+          PY
