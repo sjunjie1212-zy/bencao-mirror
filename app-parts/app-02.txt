@@ -1,0 +1,92 @@
+整体。</h3><p>${h.atlas.portrait}</p></div></div>
+      <div class="atlas-subhead"><div><p class="eyebrow">02 / DEFINING STRUCTURE</p><h3>${h.atlas.structureTitle}</h3></div><p>${h.atlas.structureNote}</p></div>
+      ${h.atlasImages ? `<div class="atlas-five-grid">${h.atlasImages.map((item,i)=>`<figure class="atlas-five-cell cell-${i+1}">${img(item[0],`${h.name}${item[1]}视觉研究图`)}<figcaption><strong>${String(i+1).padStart(2,'0')} ${item[1]}</strong><small>${item[2]}</small></figcaption></figure>`).join('')}</div>` : `<div class="atlas-pair"><figure>${img(h.detail1,`${h.name}${h.atlas.d1[0]}视觉研究图`)}<figcaption><strong>01 ${h.atlas.d1[0]}</strong><small>${h.atlas.d1[1]}</small></figcaption></figure><figure>${img(h.detail2,`${h.name}${h.atlas.d2[0]}视觉研究图`)}<figcaption><strong>02 ${h.atlas.d2[0]}</strong><small>${h.atlas.d2[1]}</small></figcaption></figure></div>`}
+      <p class="atlas-observation">${h.atlas.structureNote}</p>
+      <div class="atlas-subhead"><div><p class="eyebrow">03 / SPECIMEN PLATE</p><h3>${h.name} · 图像档案</h3></div><p>这些图像可以帮助你看见。真实的材料，仍然比图像多。</p></div>
+      ${h.atlasImages ? `<div class="atlas-plate-index">${h.atlasImages.map((item,i)=>`<span>${String.fromCharCode(65+i)} / ${item[1]}</span>`).join('')}</div>` : `<div class="specimen-grid"><figure class="specimen-cell">${img(h.detail1,`${h.name}${h.atlas.specimen[0]}`)}<figcaption>A / ${h.atlas.specimen[0]}</figcaption></figure><figure class="specimen-cell">${img(h.detail2,`${h.name}${h.atlas.specimen[1]}`)}<figcaption>B / ${h.atlas.specimen[1]}</figcaption></figure><figure class="specimen-cell">${img(h.material,`${h.name}${h.atlas.specimen[2]}`)}<figcaption>C / ${h.atlas.specimen[2]}</figcaption></figure></div>`}
+      <p class="atlas-disclaimer">原型影像只用于建立观察路径，不作为显微、鉴定或质量证明。正式公开版应使用自有、来源明确且可核验的材料摄影。</p>
+      <button type="button" class="text-cta" data-jump="aroma">从材料，到气息 →</button>
+    </section>
+
+    <section class="plate aroma" id="aroma">
+      <header class="folio"><span>${h.no} / AROMA FIELD</span><span>EDITORIAL SENSORY MAP</span></header>
+      <div class="aroma-title"><p class="eyebrow">气发生在空间里</p><h2>纸上留下一次气息。</h2></div>
+      <div class="aroma-field" style="${aromaFieldStyle(aromaColors)}"><div class="aroma-label a1"><span>OPENING / 初息</span><strong>${h.aroma[0]}</strong></div><div class="aroma-label a2"><span>MIDDLE / 中息</span><strong>${h.aroma[1]}</strong></div><div class="aroma-label a3"><span>DRYDOWN / 余息</span><strong>${h.aroma[2]}</strong></div><div class="aroma-axis"><span>BRIGHT</span><i></i><span>DEEP</span></div></div>
+      <div class="disclaimer"><p>这不是气味本身。</p><p>这是一张感官地图。</p><p class="return">真正的气，要回到真实${h.name}里。</p></div>
+      <button type="button" class="text-cta" data-open-gate>开始真实相遇 →</button>
+    </section>
+
+    <section class="gate" id="gate" hidden><div class="gate-inner"><p class="eyebrow">SCREEN → MATERIAL</p><h2>屏幕到这里先退后一步。</h2><p>Encounter 只记录你与真实材料发生的感受。第一版不鼓励品尝来源不明的材料；未知来源只做看 / 触 / 闻。</p><div class="gate-actions"><button class="gate-primary" type="button" data-enter-encounter>我手边有${h.gate} →</button><button class="gate-secondary" type="button" data-go-catalogue>暂时没有，回到本草目录</button></div></div></section>
+
+    <section class="encounter" id="encounter" hidden>
+      <header class="folio folio-dark"><span>${h.no} / ENCOUNTER</span><span>${h.name}</span></header>
+      <div class="encounter-stage-wrap" id="encounterStages"></div>
+      <div class="encounter-bottom"><button class="encounter-back" type="button" data-enc-back hidden>← 返回上一步</button><span class="encounter-progress" id="encounterProgress">01 / 08</span></div>
+    </section>
+
+    <section class="result" id="result" hidden><div class="result-inner"><p class="eyebrow">你的${h.name}</p><div class="result-id" id="resultId">${h.no} / ENCOUNTER 01</div><blockquote class="raw-note" id="resultNote"></blockquote><div class="user-tags" id="resultTags"></div><div class="editorial"><span class="evidence-mark">编</span><div><h3>本草镜档案</h3><p>${h.sensory}</p></div></div><p class="result-principle">它们不需要完全一样。感官是材料与个人共同发生的。</p></div></section>
+
+    <section class="spectrum-block" id="personalSpectrum" hidden><div class="spectrum-inner"><p class="eyebrow">ARCHIVE / PERSONAL</p><h2>我的本草谱</h2><div class="facts"><div class="fact"><div class="fact-label">SPECIMEN</div><div class="fact-value">${h.no} ${h.name}</div></div><div class="fact"><div class="fact-label">ENCOUNTERS</div><div class="fact-value">已遇见 <span data-local-count>00</span></div></div><div class="fact"><div class="fact-label">REAL AROMA</div><div class="fact-value">真实闻过 <span data-local-smell>00</span></div></div></div><p>同一味本草，在不同时间里，可以留下不同记录。</p><button class="repeat" type="button" data-repeat>再遇一次 →</button><button class="next-herb" type="button" data-next-herb="${next.id}">继续 ${next.no} ${next.name} →</button></div></section>
+
+    <footer class="credit-strip"><strong>VISUAL STUDY SOURCES / 原型影像来源</strong><br>${h.sources.map(s=>s.href?`<a href="${s.href}" target="_blank" rel="noopener">${esc(s.label)}</a>`:esc(s.label)).join('<br>')}</footer>
+  `;
+
+  bindDetail(h);
+}
+
+function openHerb(id,{replaceHash=false}={}){
+  const h=HERBS.find(x=>x.id===id) || HERBS[0];
+  activeHerb=h;
+  renderDetail(h);
+  catalogueView.hidden=true; detailView.hidden=false;
+  document.title=`本草镜 BENCAO｜${h.no} ${h.name}`;
+  if(replaceHash) history.replaceState(null,'',`#herb=${h.id}`); else history.pushState(null,'',`#herb=${h.id}`);
+  window.scrollTo({top:0,behavior:'auto'});
+  track('herb_open',h.id);
+}
+
+function showCatalogue({replaceHash=false}={}){
+  activeHerb=null; detailView.hidden=true; catalogueView.hidden=false; renderCatalogue();
+  document.title='本草镜 BENCAO MIRROR｜六味本草';
+  if(replaceHash) history.replaceState(null,'','#catalogue'); else history.pushState(null,'','#catalogue');
+  window.scrollTo({top:0,behavior:'auto'}); track('catalogue_view',null);
+}
+
+function bindDetail(h){
+  $$('[data-go-catalogue]',detailView).forEach(b=>b.addEventListener('click',()=>showCatalogue()));
+  $$('[data-jump]',detailView).forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.jump)?.scrollIntoView({behavior:'smooth'})));
+  $('[data-open-gate]',detailView)?.addEventListener('click',()=>{ const gate=$('#gate'); gate.hidden=false; gate.scrollIntoView({behavior:'smooth'}); track('encounter_gate_view',h.id); });
+  $('[data-enter-encounter]',detailView)?.addEventListener('click',()=>startEncounter(h));
+  $('[data-repeat]',detailView)?.addEventListener('click',()=>startEncounter(h,true));
+  $('[data-next-herb]',detailView)?.addEventListener('click',e=>openHerb(e.currentTarget.dataset.nextHerb));
+}
+
+function encounterSteps(h){
+  return [
+    {id:'look',label:'01 / LOOK · 看',title:'先不要闻。只看。',prompt:'选一个你最先注意到的地方。',choices:h.look},
+    {id:'touch',label:'02 / TOUCH · 触',title:'拿起来。指尖更接近哪一种？',prompt:'只记录现在的触感。',choices:h.touch},
+    {id:'smell1confirm',label:'03 / FIRST SMELL · 第一次闻',title:'靠近一点。闻一次。',prompt:'先不要找答案。只留意最先出现的感觉。',confirm:'我已经闻过了'},
+    {id:'first',label:'03 / FIRST IMPRESSION · 初感',title:'第一感觉更接近——',prompt:'这里记录的是这一次的感官语言，不是传统药性。',choices:h.first},
+    {id:'assoc',label:'03 / ASSOCIATION · 联想',title:'它让你想到什么？',prompt:'不是标准答案，只记这一次联想。',choices:h.assoc},
+    {id:'smell2confirm',label:'04 / SECOND SMELL · 第二次闻',title:h.action2,prompt:'让材料发生一点变化，再靠近。',confirm:'我已经闻过第二次了'},
+    {id:'compare',label:'04 / COMPARE · 比较',title:'和第一次相比——',prompt:'比较，比判断更重要。',choices:h.compare},
+    {id:'note',label:'05 / RAW NOTE · 你的话',title:'最后，留一句自己的话。',prompt:'像什么？让你想到什么？',note:true}
+  ];
+}
+
+function startEncounter(h,repeat=false){
+  clearTimeout(advanceTimer);
+  encState={index:0,values:{}};
+  encStepStartedAt=performance.now();
+  const enc=$('#encounter'); enc.hidden=false; $('#result').hidden=true; $('#personalSpectrum').hidden=true;
+  buildEncounter(h);
+  const transition=()=>{ enc.scrollIntoView({behavior:'auto',block:'start'}); blackout.classList.remove('on'); };
+  if(repeat){ enc.scrollIntoView({behavior:'smooth'}); track('encounter_repeat_start',h.id); return; }
+  blackout.classList.add('on'); setTimeout(transition,720); track('encounter_start',h.id);
+}
+
+function buildEncounter(h){
+  const steps=encounterSteps(h); const holder=$('#encounterStages');
+  holder.innerHTML=steps.map((s,i)=>`<div class="encounter-stage ${i===0?'active':''}" data-enc-step="${i}"><div class="encounter-no">${s.label}</div><h2>${s.title}</h2><p>${s.prompt}</p>${s.choices?`<div class="choices">${s.choices.map(c=>`<button class="choice" type="button" data-choice="${esc(c)}">${c}</button>`).join('')}</div>`:''}${s.confirm?`<button class="confirm-action" type="button" data-confirm>${s.confirm}</button>`:''}${s.note?`<textarea class="encounter-note" maxlength="160" placeholder="写下你自己的句子……"></textarea><br><button class="encounter-submit" type="button" data-submit>留下这次相遇 →</button>`:''}</div>`).join('');
+  $$('.choice',holder).forEach(btn=>btn.addEventListener('click',()=>{
+    const stage=btn.closest('.encounter-stage'); const i=Number(stage.dataset.encStep); const s=steps[i];
