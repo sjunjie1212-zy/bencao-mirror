@@ -1,0 +1,42 @@
+gure{height:330px}.atlas-portrait figure{height:430px}.atlas-pair{grid-template-columns:1fr}.atlas-pair figure{height:390px}.atlas-subhead{display:block}.atlas-subhead p{text-align:left;margin-top:12px}.specimen-grid{grid-template-columns:1fr}.specimen-cell,.specimen-cell:last-child{grid-column:auto;height:330px}.aroma-field{min-height:560px}.aroma-label.a2{left:28%;top:50%}.aroma-label.a3{right:8%;bottom:15%}.facts{grid-template-columns:1fr}.fact+.fact{border-left:0;border-top:1px solid var(--fiber);padding-left:0}.sheet-dialog{padding:42px 24px}.sheet-dialog h2{font-size:38px}.spectrum-row{grid-template-columns:62px 1fr}.spectrum-row span{grid-column:2}.next-herb{margin-left:0;display:block}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.encounter-stage{animation:none}.blackout{transition:none}}
+
+/* Release Draft 01 resilience */
+img.image-failed{visibility:hidden}
+.evidence-note.no-mark{grid-template-columns:1fr;max-width:560px}
+.evidence-note.no-mark small{display:block;margin-top:10px}
+
+/* V3.6.1 VU01 — unified five-image atlas, matching BC.001 visual density */
+.atlas-five-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px;align-items:start}
+.atlas-five-cell{margin:0;background:var(--paper-deep);overflow:hidden}
+.atlas-five-cell.cell-1,.atlas-five-cell.cell-2{grid-column:span 6}
+.atlas-five-cell.cell-3,.atlas-five-cell.cell-4,.atlas-five-cell.cell-5{grid-column:span 4}
+.atlas-five-cell img{width:100%;height:390px;object-fit:cover;filter:saturate(.88) contrast(.97) brightness(1.04)}
+.atlas-five-cell.cell-3 img,.atlas-five-cell.cell-4 img,.atlas-five-cell.cell-5 img{height:300px}
+.atlas-five-cell figcaption{padding:14px 0 0;background:var(--paper);font-size:13px;color:#403d37}
+.atlas-five-cell strong{display:block;font-weight:400}
+.atlas-five-cell small{display:block;margin-top:5px;color:var(--graphite);font:9px/1.5 var(--sans);letter-spacing:.04em}
+.atlas-plate-index{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;padding:18px 0;border-top:1px solid rgba(24,23,19,.14);border-bottom:1px solid rgba(24,23,19,.14);color:var(--graphite);font:10px/1.5 var(--sans);letter-spacing:.08em}
+@media(max-width:980px){.atlas-five-cell.cell-1,.atlas-five-cell.cell-2,.atlas-five-cell.cell-3,.atlas-five-cell.cell-4,.atlas-five-cell.cell-5{grid-column:span 6}.atlas-five-cell img,.atlas-five-cell.cell-3 img,.atlas-five-cell.cell-4 img,.atlas-five-cell.cell-5 img{height:340px}.atlas-plate-index{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.atlas-five-grid{grid-template-columns:1fr}.atlas-five-cell.cell-1,.atlas-five-cell.cell-2,.atlas-five-cell.cell-3,.atlas-five-cell.cell-4,.atlas-five-cell.cell-5{grid-column:auto}.atlas-five-cell img,.atlas-five-cell.cell-3 img,.atlas-five-cell.cell-4 img,.atlas-five-cell.cell-5 img{height:330px}.atlas-plate-index{grid-template-columns:1fr}}
+
+/* GitHub Pages image transport: each herb uses one 3×2 photographic sprite.
+   This changes transport only; visual filtering and layout remain BENCAO. */
+.bencao-sprite{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:1px;
+  background-repeat:no-repeat;
+  background-size:300% 200%;
+  background-color:var(--paper-deep);
+}
+.herb-card-figure .bencao-sprite{width:100%;height:100%;filter:saturate(.74) contrast(.92) brightness(1.1);transition:transform .65s ease,filter .35s ease}
+.herb-card:hover .bencao-sprite{transform:scale(1.02);filter:saturate(.86) contrast(.95) brightness(1.08)}
+.today-figure .bencao-sprite{width:100%;height:100%;filter:saturate(.8) contrast(.94) brightness(1.08)}
+.identity-chapter .bencao-sprite{width:100%;height:100%;filter:saturate(.78) contrast(.94) brightness(1.08)}
+.atlas-portrait .bencao-sprite,.atlas-pair .bencao-sprite,.specimen-cell .bencao-sprite{width:100%;height:100%;filter:saturate(.72) contrast(.93) brightness(1.08)}
+.atlas-five-cell .bencao-sprite{width:100%;height:390px;filter:saturate(.88) contrast(.97) brightness(1.04)}
+.atlas-five-cell.cell-3 .bencao-sprite,.atlas-five-cell.cell-4 .bencao-sprite,.atlas-five-cell.cell-5 .bencao-sprite{height:300px}
+@media(max-width:980px){.atlas-five-cell .bencao-sprite,.atlas-five-cell.cell-3 .bencao-sprite,.atlas-five-cell.cell-4 .bencao-sprite,.atlas-five-cell.cell-5 .bencao-sprite{height:340px}}
+@media(max-width:680px){.atlas-five-cell .bencao-sprite,.atlas-five-cell.cell-3 .bencao-sprite,.atlas-five-cell.cell-4 .bencao-sprite,.atlas-five-cell.cell-5 .bencao-sprite{height:330px}}
