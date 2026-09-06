@@ -38,8 +38,11 @@ const SPRITE_POS={0:'0% 0%',1:'50% 0%',2:'100% 0%',3:'0% 100%',4:'50% 100%',5:'1
 const spriteCache=new Map();
 async function spriteDataUrl(herb){
   if(spriteCache.has(herb)) return spriteCache.get(herb);
-  const promise=fetch(`./assets/${herb}.b64?v=${VERSION}`,{cache:'force-cache'})
-    .then(async r=>{ if(!r.ok) throw new Error(`sprite ${herb}`); return `data:image/webp;base64,${(await r.text()).trim()}`; });
+  const promise=Promise.all(Array.from({length:8},(_,i)=>i).map(async i=>{
+    const r=await fetch(`./assets/${herb}-${String(i).padStart(2,'0')}.b64?v=${VERSION}`,{cache:'force-cache'});
+    if(!r.ok) throw new Error(`sprite ${herb} ${i}`);
+    return (await r.text()).trim();
+  })).then(parts=>`data:image/webp;base64,${parts.join('')}`);
   spriteCache.set(herb,promise);
   return promise;
 }
