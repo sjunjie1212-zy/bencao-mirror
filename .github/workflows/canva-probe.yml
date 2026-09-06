@@ -1,0 +1,17 @@
+name: Canva Probe
+on: [push]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe Canva media variants
+        run: |
+          set +e
+          exact='https://media.canva.com/v2/image-resize/format:JPG/height:133/quality:75/uri:ifs%3A%2F%2FM%2F50050dc6-90b3-4655-a6e0-9cbf522e1a95/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAP1MA5hQi6OUmrirdWj7GmwMuDdR2uxHeUHQINIS5fbt&exp=1788749268&osig=AAAAAAAAAAAAAAAAAAAAADlU5yzIrHn4shA5GrPOZVAsUHBxC5ECGB4NOjuMF4Jx&signer=media-rpc&x-canva-quality=thumbnail'
+          unsigned='https://media.canva.com/v2/image-resize/format:JPG/height:1200/quality:95/uri:ifs%3A%2F%2FM%2F50050dc6-90b3-4655-a6e0-9cbf522e1a95/watermark:F/width:1800'
+          modified='https://media.canva.com/v2/image-resize/format:JPG/height:1200/quality:95/uri:ifs%3A%2F%2FM%2F50050dc6-90b3-4655-a6e0-9cbf522e1a95/watermark:F/width:1800?csig=AAAAAAAAAAAAAAAAAAAAAP1MA5hQi6OUmrirdWj7GmwMuDdR2uxHeUHQINIS5fbt&exp=1788749268&osig=AAAAAAAAAAAAAAAAAAAAADlU5yzIrHn4shA5GrPOZVAsUHBxC5ECGB4NOjuMF4Jx&signer=media-rpc&x-canva-quality=thumbnail'
+          for label in exact unsigned modified; do
+            eval url=\$$label
+            code=$(curl -L -sS -o /tmp/$label.jpg -w '%{http_code}' "$url")
+            echo "$label code=$code bytes=$(wc -c </tmp/$label.jpg) type=$(file -b /tmp/$label.jpg)"
+          done
