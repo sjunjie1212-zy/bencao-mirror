@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ECE9E1" />
+  <title>本草镜 BENCAO MIRROR｜六味本草</title>
+  <meta name="description" content="本草镜：连接人与真实草木的智能感官系统。" />
+  <link rel="stylesheet" href="./styles.css?v=364af3" />
+</head>
+<body>
+  <header class="global-nav" id="globalNav">
+    <button class="brand" type="button" data-go-catalogue aria-label="回到本草目录">
+      <span class="brand-cn">本草镜</span>
+      <span class="brand-en">BENCAO MIRROR</span>
+    </button>
+    <nav class="nav-links" aria-label="主导航">
+      <button type="button" data-go-catalogue>本草</button>
+      <button type="button" data-open-spectrum>我的本草谱</button>
+      <button type="button" data-open-about>关于</button>
+    </nav>
+    <div class="nav-meta">DIGITAL HERBARIUM · AF02</div>
+  </header>
+
+  <main id="app">
+    <section id="catalogueView" class="catalogue-view" aria-label="本草目录">
+      <aside class="catalogue-aside">
+        <p class="eyebrow">BENCAO / HERB INDEX</p>
+        <h1>本草</h1>
+        <p class="catalogue-thesis">草木不是答案，<br>是一次相遇。<br><br>从屏幕回到草木，<br>在真实世界里，<br>认识它，也认识自己的感受。</p>
+        <p class="catalogue-count" id="catalogueCount">已遇见 0 / 6</p>
+      </aside>
+      <div class="catalogue-main">
+        <div class="catalogue-heading">
+          <div>
+            <p class="eyebrow">VISUAL UNIFICATION 01</p>
+            <h2>六味本草</h2>
+          </div>
+          <p>同一套骨架，不同的材料性格。<br>每一味都从真实观察开始。</p>
+        </div>
+        <div class="herb-grid" id="herbGrid"></div>
+      </div>
+    </section>
+
+    <section id="detailView" class="detail-view" hidden></section>
+  </main>
+
+  <dialog id="spectrumDialog" class="sheet-dialog">
+    <button class="dialog-close" type="button" data-dialog-close aria-label="关闭">×</button>
+    <p class="eyebrow">ARCHIVE / PERSONAL</p>
+    <h2>我的本草谱</h2>
+    <p class="dialog-lead">这里只记录真实发生过的相遇，不做体质、性格或功效推断。</p>
+    <div class="spectrum-grid" id="spectrumGrid"></div>
+  </dialog>
+
+  <dialog id="aboutDialog" class="sheet-dialog">
+    <button class="dialog-close" type="button" data-dialog-close aria-label="关闭">×</button>
+    <p class="eyebrow">ABOUT / 本草镜</p>
+    <h2>从屏幕回到草木。</h2>
+    <p class="dialog-lead">本草镜不是在线问诊或功效查询工具。数字界面只负责帮助你认识材料、靠近材料，并保存一次真实的感官相遇。</p>
+    <div class="about-rule"></div>
+    <p>视觉影像中，BC.001 陈皮继续作为母版；BC.002–BC.006 已切换到统一摄影纪律的 BENCAO Visual Study。它们用于原型观察路径，不作为植物学鉴定或药材质量证据；正式公开版仍应由自有、可核验材料重新拍摄。</p>
+  </dialog>
+
+  <div id="blackout" class="blackout" aria-hidden="true"></div>
+  <script src="./app.js?v=364af3"></script>
+</body>
+</html>
