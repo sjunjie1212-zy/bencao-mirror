@@ -1,0 +1,1 @@
+Sprite assets are staged as text-safe base64 chunks during connector deployment, then reconstructed client-side. This avoids binary transport corruption in the GitHub integration.
