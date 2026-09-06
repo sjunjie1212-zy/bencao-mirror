@@ -1,0 +1,51 @@
+
+    $$('.choice',stage).forEach(x=>x.classList.remove('selected')); btn.classList.add('selected'); encState.values[s.id]=btn.dataset.choice; track(`${s.id}_select`,h.id,{value:btn.dataset.choice});
+    advanceTimer=setTimeout(()=>showEncStep(i+1,steps.length),180);
+  }));
+  $$('[data-confirm]',holder).forEach(btn=>btn.addEventListener('click',()=>{const stage=btn.closest('.encounter-stage');const i=Number(stage.dataset.encStep);const s=steps[i];encState.values[s.id]=true;track(s.id,h.id);showEncStep(i+1,steps.length);}));
+  $('[data-submit]',holder)?.addEventListener('click',()=>{const raw=$('.encounter-note',holder).value;encState.values.raw_note=raw;track('raw_note_submit',h.id,{has_note:!!raw.trim(),note_length:raw.length});finishEncounter(h);});
+  $('[data-enc-back]',detailView).onclick=()=>showEncStep(Math.max(0,encState.index-1),steps.length);
+  updateEncUI(steps.length);
+}
+
+function showEncStep(i,total){
+  clearTimeout(advanceTimer);
+  if(encStepStartedAt!==null && encState){ track('encounter_step_duration',activeHerb?.id,{step:encState.index+1,duration_ms:Math.round(performance.now()-encStepStartedAt)}); }
+  encState.index=Math.max(0,Math.min(i,total-1));
+  encStepStartedAt=performance.now();
+  $$('.encounter-stage',detailView).forEach((s,n)=>s.classList.toggle('active',n===encState.index)); updateEncUI(total);
+}
+function updateEncUI(total){ $('#encounterProgress').textContent=`${pad2(encState.index+1)} / ${pad2(total)}`; $('[data-enc-back]',detailView).hidden=encState.index===0; }
+
+function finishEncounter(h){
+  if(encStepStartedAt!==null && encState){ track('encounter_step_duration',h.id,{step:encState.index+1,duration_ms:Math.round(performance.now()-encStepStartedAt)}); encStepStartedAt=null; }
+  const n=getCount(h.id)+1; setCount(h.id,n);
+  const vals=encState.values; localStorage.setItem(`${LS}:${h.id}:last`,JSON.stringify(vals));
+  $('#resultId').textContent=`${h.no} / ENCOUNTER ${pad2(n)}`;
+  const note=$('#resultNote'); note.textContent=vals.raw_note.trim()?vals.raw_note:'这一次，你没有留下文字。'; note.classList.toggle('empty',!vals.raw_note.trim());
+  const tags=[vals.first,vals.assoc,vals.compare].filter(Boolean); $('#resultTags').innerHTML=tags.map(t=>`<span class="user-tag">${esc(t)}</span>`).join('');
+  $('[data-local-count]').textContent=pad2(n); $('[data-local-smell]').textContent=pad2(n);
+  $('#result').hidden=false; $('#personalSpectrum').hidden=false; $('#result').scrollIntoView({behavior:'smooth'}); track('result_view',h.id,{encounter_no:n}); renderSpectrum(); renderCatalogue();
+}
+
+function renderSpectrum(){
+  $('#spectrumGrid').innerHTML=HERBS.map(h=>{const c=getCount(h.id);return `<div class="spectrum-row"><span class="spectrum-row-id">${h.no}</span><strong>${h.name}</strong><span>${c?`已遇见 ${pad2(c)}`:'尚未相遇'}</span></div>`}).join('');
+}
+
+function openDialog(id){ const d=$(id); renderSpectrum(); if(typeof d.showModal==='function') d.showModal(); else d.setAttribute('open',''); }
+$$('[data-open-spectrum]').forEach(b=>b.addEventListener('click',()=>openDialog('#spectrumDialog')));
+$$('[data-open-about]').forEach(b=>b.addEventListener('click',()=>openDialog('#aboutDialog')));
+$$('[data-dialog-close]').forEach(b=>b.addEventListener('click',()=>b.closest('dialog').close()));
+$$('[data-go-catalogue]',document).forEach(b=>{ if(!detailView.contains(b)) b.addEventListener('click',()=>showCatalogue()); });
+window.addEventListener('pagehide',()=>{ track('session_exit',activeHerb?.id,{view:activeHerb?'detail':'catalogue',encounter_step:encState?.index!==undefined?encState.index+1:null}); });
+window.addEventListener('popstate',routeFromHash);
+function routeFromHash(){ const m=location.hash.match(/^#herb=(bc00[1-6])$/); if(m) openHerb(m[1],{replaceHash:true}); else showCatalogue({replaceHash:true}); }
+
+renderCatalogue(); renderSpectrum();
+const initial=location.hash.match(/^#herb=(bc00[1-6])$/); if(initial) openHerb(initial[1],{replaceHash:true}); else history.replaceState(null,'','#catalogue');
+
+
+// GitHub Pages sprite hydration: hydrate after any render without changing product behavior.
+const spriteObserver=new MutationObserver(()=>hydrateSprites(document));
+spriteObserver.observe(document.documentElement,{childList:true,subtree:true});
+hydrateSprites(document);
