@@ -1,0 +1,69 @@
+const VERSION = '3.6.4-AF3-GH1';
+const LS = 'bencao:rd1';
+const WIKI = name => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(name).replace(/%2F/g,'/')}`;
+const FILE_PAGE = name => `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(name).replace(/%20/g,'_')}`;
+
+const HERBS = [
+  {
+    id:'bc001', no:'BC.001', name:'陈皮', pinyin:'CHÉN PÍ', latinDrug:'Citri Reticulatae Pericarpium', plant:'Citrus reticulata Blanco', part:'干燥成熟果皮', color:'#A87546', aromaColors:['#D79A55','#B8743E','#81705C'],
+    hero:'sprite:bc001:0', origin:'sprite:bc001:1', material:'sprite:bc001:2', detail1:'sprite:bc001:3', detail2:'sprite:bc001:4',
+    heroPos:'56% 48%',
+    today:['你可能已经见过它很多次。','今天，认真看一次。'],
+    identity:{lead:'它来自成熟柑橘的果皮。',sub:'从果实到干燥后的材料，变化发生在时间里。',originTitle:'从果实开始。',originText:'剥开的果皮有清楚的内外两面。此时，它仍保留新鲜果实的颜色与水分。',materialTitle:'时间参与了形成。',materialText:'水分逐渐离开，果皮变干、卷曲、变轻；颜色、纹理与触感也随之改变。',note:'时间不是唯一的质量标准。品种、原料、加工与储存同样重要。'},
+    evidence:{mark:'药', title:'Citri Reticulatae Pericarpium', lines:['干燥成熟果皮','温 · 辛、苦 · 肺、脾'], note:'传统 / 药典知识体系'},
+    atlas:{lead:'干燥之后，果皮成为一种新的材料。',portrait:'先看整体：卷曲、厚薄、内外表面一起构成它的材料感。',structureTitle:'同一片果皮，有两种表面。',structureNote:'深与浅、紧密与疏松，在同一片材料上并置。',d1:['外表面','紧密 · 起伏 · 点状纹理'],d2:['内表面','浅色 · 疏松 · 多孔'],specimen:['卷曲边缘','断面与碎片','材料整体']},
+    aroma:['柑橘皮','辛香','干燥 · 微木质'], sensory:'柑橘皮 · 辛香 · 干燥 · 微木质',
+    gate:'真实陈皮', action2:'轻轻折动边缘，再闻一次。',
+    look:['纹理','卷曲','颜色','厚薄','白色内层','油室','其他'], touch:['干','韧','脆','粗','薄','厚','说不清'], first:['明亮','沉稳','清','柔','说不清'], assoc:['柑橘','青草','花','辛香','其他','说不清'], compare:['更亮','更辛','更深','更柔','变化不明显','说不清'],
+    sources:[{label:'BC.001 影像为本草镜现有原型视觉研究素材。',href:''}]
+  },
+  {
+    id:'bc002', no:'BC.002', name:'薄荷', pinyin:'BÒ HÉ', latinDrug:'Menthae Haplocalycis Herba', plant:'Mentha haplocalyx Briq.', part:'干燥地上部分', color:'#71836B', aromaColors:['#75A06F','#84A876','#C7B55C'],
+    hero:'sprite:bc002:0', origin:'sprite:bc002:0', material:'sprite:bc002:1', detail1:'sprite:bc002:2', detail2:'sprite:bc002:3', atlasImages:[['sprite:bc002:1','植株全貌','植株挺立 · 叶片对生 · 叶色青绿'],['sprite:bc002:2','叶片表面','叶面皱缩 · 脉络清晰 · 细小腺点'],['sprite:bc002:3','叶片背面','叶背较浅 · 脉络凸起 · 细柔毛'],['sprite:bc002:4','茎与叶节','茎呈四棱 · 具细柔毛 · 叶对生于节上'],['sprite:bc002:5','花序','轮伞花序顶生 · 花小而密']], heroPos:'50% 45%',
+    today:['先不要把它等同于“清凉”。','先看一片叶。'],
+    identity:{lead:'它来自一株有四棱茎、对生叶的薄荷。',sub:'被采收、干燥以后，叶、茎与花序一起成为药材的地上部分。',originTitle:'叶与茎先构成它。',originText:'叶片有清楚的脉络和锯齿边缘；茎有明显棱角。新鲜时，绿色与水分让结构显得舒展。',materialTitle:'叶、茎与花序共同构成地上部分。',materialText:'当前 Visual Study 先记录鲜活结构与可见特征；正式公开版再补拍同一摄影体系下的干燥药材整体。',note:'揉动会快速改变薄荷的气息，所以第一次闻之前，先不要揉。'},
+    evidence:{mark:'药', title:'Menthae Haplocalycis Herba', lines:['干燥地上部分','辛，凉 · 肺、肝'], note:'传统 / 2025《中国药典》体系'},
+    atlas:{lead:'薄荷不是一张“绿叶”图片；它是一组叶、茎、边缘与碎片。',portrait:'先看干燥后的整体：轻、散、叶片卷曲，茎段穿在其中。',structureTitle:'叶脉、锯齿与茎棱，是它最容易被看见的结构。',structureNote:'薄、轻和易碎决定了薄荷材料在手里的节奏。',d1:['叶片','皱缩 · 锯齿 · 脉络'],d2:['干燥状态','轻 · 脆 · 易碎'],specimen:['叶片边缘','茎与叶','干燥整体']},
+    aroma:['薄荷叶','青绿 · 清透','辛香 · 高扬'], sensory:'薄荷叶 · 青绿 · 清透 · 辛香',
+    gate:'来源明确的真实薄荷', action2:'用指腹轻轻揉一下叶片，再闻一次。',
+    look:['叶脉','锯齿','叶背','卷曲','茎棱','颜色','其他'], touch:['薄','干','脆','轻','粗','韧','说不清'], first:['清','透','绿','辛香','说不清'], assoc:['青草','茶','香草','辛香','其他','说不清'], compare:['更清','更辛','更绿','更浓','变化不明显','说不清'],
+    sources:[{label:'BC002 Hero + Material Atlas：BENCAO Photographic Direction 01 原型 Visual Study；不是植物学鉴定或药材质量证据。正式公开版需以自有、来源明确且可核验材料重拍。',href:''}]
+  },
+  {
+    id:'bc003', no:'BC.003', name:'枸杞', pinyin:'GǑU QǏ', latinDrug:'Lycii Fructus', plant:'Lycium barbarum L.', part:'干燥成熟果实', color:'#A55343', aromaColors:['#C96D58','#B65B4B','#9C7659'],
+    hero:'sprite:bc003:0', origin:'sprite:bc003:0', material:'sprite:bc003:5', detail1:'sprite:bc003:3', detail2:'sprite:bc003:4', atlasImages:[['sprite:bc003:1','果枝全貌','枝条纤细 · 叶片互生 · 果实椭圆'],['sprite:bc003:2','叶片表面','叶片狭长 · 叶脉清晰 · 表面具细密纹理'],['sprite:bc003:3','果实表面','果实椭圆 · 表皮薄而光滑 · 微具纵纹'],['sprite:bc003:4','果实剖面','果肉柔软多汁 · 内含多枚扁平种子'],['sprite:bc003:5','干燥材料','干燥后果实皱缩 · 长椭圆形 · 表面纵皱']], heroPos:'50% 48%',
+    today:['它常常以一把红色出现。','今天，只看一颗。'],
+    identity:{lead:'它来自宁夏枸杞的成熟果实。',sub:'成熟、采收、干燥之后，一颗多汁果实变成皱缩而柔韧的果干材料。',originTitle:'先是一颗成熟果实。',originText:'鲜果呈红色，轮廓饱满。单独看一颗时，果柄端、果尖与细微色差才会出现。',materialTitle:'干燥把水分收进皱纹里。',materialText:'果皮皱缩，体积减小；表面由光滑转为起伏，内部仍可能保留一定柔润感。',note:'枸杞常被当作食物，但本草镜第一版仍不鼓励品尝来源不明的材料。'},
+    evidence:{mark:'药', title:'Lycii Fructus', lines:['宁夏枸杞的干燥成熟果实','甘，平 · 肝、肾'], note:'传统 / 2025《中国药典》体系'},
+    atlas:{lead:'把“一把红色”拆成单颗之后，形状、皱纹与柔韧度开始有差别。',portrait:'先看一颗，再看一把。材料的差异不是噪声，也是它的一部分。',structureTitle:'表皮皱缩，果肉与种子藏在内部。',structureNote:'这是一种有厚度、有内外层次的干燥果实，不是一张平面红色。',d1:['单颗表面','皱缩 · 长椭圆 · 色差'],d2:['群体状态','大小 · 形状 · 干燥程度不同'],specimen:['单颗轮廓','皱纹密度','一把材料']},
+    aroma:['果干','淡甜香','蜜样 · 轻草本'], sensory:'果干 · 淡甜香 · 蜜样 · 轻草本',
+    gate:'来源明确的真实枸杞', action2:'用指腹轻压一颗，再闻一次。',
+    look:['皱纹','颜色','形状','果柄痕','大小','个体差异','其他'], touch:['柔','韧','干','皱','轻','略黏','说不清'], first:['淡','柔','甜香','熟','说不清'], assoc:['果干','枣','蜂蜜','青草','其他','说不清'], compare:['更甜香','更果香','更深','更柔','变化不明显','说不清'],
+    sources:[{label:'BC003 Hero + Material Atlas：BENCAO Photographic Direction 01 原型 Visual Study；不是植物学鉴定或药材质量证据。正式公开版需以自有、来源明确且可核验材料重拍。',href:''}]
+  },
+  {
+    id:'bc004', no:'BC.004', name:'桂花', pinyin:'GUÌ HUĀ', latinDrug:'Osmanthus fragrans (Thunb.) Lour.', plant:'Osmanthus fragrans (Thunb.) Lour.', part:'花（本草镜体验材料：来源明确的干燥桂花）', color:'#C49A4C', aromaColors:['#D6BA68','#C89E49','#A9845C'],
+    hero:'sprite:bc004:0', origin:'sprite:bc004:0', material:'sprite:bc004:5', detail1:'sprite:bc004:2', detail2:'sprite:bc004:3', atlasImages:[['sprite:bc004:1','花枝全貌','花簇生于叶腋 · 花叶相映 · 枝条舒展'],['sprite:bc004:2','花簇','小花密集成簇 · 花瓣肉质 · 淡黄色'],['sprite:bc004:3','单花结构','花冠四瓣 · 花瓣厚实 · 中央具短花蕊'],['sprite:bc004:4','叶片与叶脉','叶片革质 · 表面光滑 · 叶脉清晰'],['sprite:bc004:5','干燥花材','干燥后呈金黄色 · 花形完整或微卷']], heroPos:'50% 52%',
+    today:['它很小，香气却常常先于形状被记住。','今天，先看见它。'],
+    identity:{lead:'它来自木犀叶腋里成簇开放的小花。',sub:'花朵只有很小的尺度。干燥之后，颜色、卷曲和碎裂让它变成另一种轻盈材料。',originTitle:'先从叶腋里的花簇开始。',originText:'木犀的花聚在叶腋，花冠可呈黄白、淡黄、黄色或橙红。完整花朵本身很小。',materialTitle:'干燥会放大“轻”和“碎”。',materialText:'花冠收缩、颜色加深，花梗与碎瓣混在一起。少量材料就形成很高的表面积。',note:'桂花在本草镜中按植物与感官材料呈现，不把它标成现行《中国药典》标准药材。'},
+    evidence:{mark:'', title:'Osmanthus fragrans (Thunb.) Lour.', lines:['木犀科 · 木犀属','花簇生叶腋 · 花极芳香'], note:'植物学身份记录；这里不使用“药”标签'},
+    atlas:{lead:'桂花的材料性格来自尺度：一朵很小，一撮很多。',portrait:'先看一撮。再靠近，花冠、花梗和碎瓣才从“金黄色”里分离出来。',structureTitle:'小尺度、薄花瓣与聚集状态，一起决定它的材料感。',structureNote:'这里不把“香”当成视觉答案；先只记录形状、颜色和碎裂。',d1:['干燥花朵','小 · 轻 · 卷曲'],d2:['聚集状态','花冠 · 花梗 · 碎瓣'],specimen:['单朵尺度','花簇关系','干燥整体']},
+    aroma:['花香','杏桃样 · 蜜甜','干花 · 柔和'], sensory:'花香 · 杏桃样 · 蜜甜 · 干花',
+    gate:'来源明确的真实干燥桂花', action2:'轻轻拨动几朵，再闻一次。',
+    look:['花瓣','颜色','花梗','大小','聚集','碎片','其他'], touch:['轻','干','脆','薄','碎','柔','说不清'], first:['明亮','轻','甜香','浓','说不清'], assoc:['花','杏桃','蜂蜜','熟果','其他','说不清'], compare:['更甜香','更果香','更深','更柔','变化不明显','说不清'],
+    sources:[{label:'BC004 Hero + Material Atlas：BENCAO Photographic Direction 01 原型 Visual Study；不是植物学鉴定或药材质量证据。正式公开版需以自有、来源明确且可核验材料重拍。',href:''}]
+  },
+  {
+    id:'bc005', no:'BC.005', name:'菊花', pinyin:'JÚ HUĀ', latinDrug:'Chrysanthemi Flos', plant:'Chrysanthemum morifolium Ramat.', part:'干燥头状花序', color:'#9A8B60', aromaColors:['#D3C48E','#B7A66D','#95836B'],
+    hero:'sprite:bc005:0', origin:'sprite:bc005:0', material:'sprite:bc005:5', detail1:'sprite:bc005:2', detail2:'sprite:bc005:3', atlasImages:[['sprite:bc005:1','花枝全貌','植株挺立 · 花枝分枝 · 花朵簇生'],['sprite:bc005:2','花序中心','管状花密集 · 球状排列 · 黄色'],['sprite:bc005:3','舌状花','舌状花呈长条形 · 边缘微卷 · 质地薄柔'],['sprite:bc005:4','花叶与花蕾','叶片羽状分裂 · 花蕾外层苞片紧密包裹'],['sprite:bc005:5','干燥花材','干燥后花形完整 · 瓣片皱缩卷曲 · 质地轻脆']], heroPos:'50% 46%',
+    today:['“一朵菊花”其实有很多层。','今天，从花心往外看。'],
+    identity:{lead:'它来自菊的头状花序。',sub:'盛开时采收，经过不同加工方式后，花序整体成为干燥材料。',originTitle:'它不是单一的一片花瓣。',originText:'外围与中央的花在同一个花序里形成层次；颜色、形态与排列让整朵花有明确中心。',materialTitle:'干燥保留了花序，也改变了支撑。',materialText:'花瓣折缩、花心变得密实或松散，整体变轻、变脆；不同产地和加工方式也会带来外观差异。',note:'菊花药材按产地与加工方法可分多种类型；原型页面不把某一张视觉研究图当作全部菊花。'},
+    evidence:{mark:'药', title:'Chrysanthemi Flos', lines:['菊的干燥头状花序','甘、苦，微寒 · 肺、肝'], note:'传统 / 2025《中国药典》体系'},
+    atlas:{lead:'先看“整朵”，再把注意力移到花心、花瓣与基部。',portrait:'干燥后的花序仍然有中心和方向，但支撑变轻，花瓣更容易折缩。',structureTitle:'层次比颜色更重要。',structureNote:'花心的密度、外围花瓣的卷曲和基部结构，让一朵干菊花有不同触感区域。',d1:['花序层次','中心 · 外围 · 方向'],d2:['干燥状态','轻 · 松 · 易脆'],specimen:['花心','外围花瓣','整朵花序']},
+    aroma:['干花','青草 · 草本','柔和 · 微甘香'], sensory:'干花 · 青草 · 草本 · 柔和',
+    gate:'来源明确的真实菊花', action2:'用指尖轻轻拨开花心，再闻一次。',
+    look:['花心','花瓣层次','颜色','卷曲','基部','完整度','其他'], touch:['轻','柔','脆','干','松','薄','说不清'], first:['清','淡','柔','草本','说不清'], assoc:['干花','青草','茶','晒过的植物','其他','说不清'], compare:['更草本','更清','更深','更柔','变化不明显','说不清'],
+    sources:[{label:'BC005 Hero + Material Atlas：BENCAO Photographic Direction 01 原型 Visual Study；不是植物学鉴定或药材质量证据。正式公开版需以自有、来源明确且可核验材料重拍。',href:''}]
+  },
+  {
+    id:'bc006', no:'BC.006', name:'紫苏', pinyin:'ZǏ SŪ', latinDrug:'Perillae Folium', plant:'Perilla frutescens (L.) Britt.', part:'干燥叶（或带嫩枝）', color:'#74586C', aromaColors:['#8A687C','#745768','#87735C'],
