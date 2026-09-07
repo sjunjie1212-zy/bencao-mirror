@@ -1,0 +1,23 @@
+name: Inspect binary blob candidates
+on:
+  push:
+    branches: ["blob-candidate-inspect"]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect candidates
+        shell: bash
+        run: |
+          set -euo pipefail
+          for f in candidate/*.bin; do
+            echo "=== $f ==="
+            wc -c "$f"
+            sha256sum "$f"
+            file "$f"
+            xxd -l 32 "$f"
+            if command -v identify >/dev/null 2>&1; then identify "$f" || true; fi
+          done
