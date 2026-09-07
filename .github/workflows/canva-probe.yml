@@ -1,0 +1,23 @@
+name: Probe Canva HD transport
+on:
+  push:
+    branches: ["visual-fidelity-365-final"]
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe signed Canva renditions
+        shell: bash
+        run: |
+          set -u
+          U='https://media.canva.com/v2/image-resize/format:JPG/height:133/quality:75/uri:ifs%3A%2F%2FM%2Fac915da7-73b4-4332-b58e-0e4bb9cf0a8c/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAJsZALUN1scbhWx3DTIake9WzLRjwtSqgucot7Q5viF2&exp=1788803628&osig=AAAAAAAAAAAAAAAAAAAAAHzjITNnmusfhrMGf0FRjiDK6ML0bDuv-lLAZVk20QDa&signer=media-rpc&x-canva-quality=thumbnail'
+          U2="${U/height:133/height:1600}"; U2="${U2/width:200/width:2400}"; U2="${U2/format:JPG/format:WEBP}"; U2="${U2/quality:75/quality:100}"; U2="${U2/x-canva-quality=thumbnail/x-canva-quality=screen_2x}"
+          U3="${U/height:133/height:1600}"; U3="${U3/width:200/width:2400}"; U3="${U3/x-canva-quality=thumbnail/x-canva-quality=screen_2x}"
+          U4="${U/x-canva-quality=thumbnail/x-canva-quality=screen_2x}"
+          for pair in "thumb|$U" "webp2400|$U2" "jpg2400|$U3" "qualityonly|$U4"; do
+            n=${pair%%|*}; url=${pair#*|};
+            code=$(curl -L -sS -w '%{http_code}' -o "/tmp/$n" "$url" || true)
+            echo "$n HTTP=$code bytes=$(stat -c%s /tmp/$n 2>/dev/null || echo 0) type=$(file -b /tmp/$n 2>/dev/null || true)"
+          done
