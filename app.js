@@ -6,7 +6,7 @@ const FILE_PAGE = name => `https://commons.wikimedia.org/wiki/File:${encodeURICo
 const HERBS = [
   {
     id:'bc001', no:'BC.001', name:'陈皮', pinyin:'CHÉN PÍ', latinDrug:'Citri Reticulatae Pericarpium', plant:'Citrus reticulata Blanco', part:'干燥成熟果皮', color:'#A87546', aromaColors:['#D79A55','#B8743E','#81705C'],
-    hero:'./images/bc001-hero-vf1.webp', origin:'./images/bc001-02-fresh-peel.jpg', material:'./images/bc001-03-dried-material.jpg', detail1:'./images/bc001-atlas-outer.jpg', detail2:'./images/bc001-atlas-inner.jpg',
+    hero:'./images/bc001-hero-vf1.webp', origin:'./images/bc001-02-fresh-peel.jpg', material:'./images/bc001-03-dried-material.jpg', plate:'./images/bc001-study-detail-grid-01.jpg', detail1:'./images/bc001-atlas-outer.jpg', detail2:'./images/bc001-atlas-inner.jpg',
     heroPos:'56% 48%',
     today:['你可能已经见过它很多次。','今天，认真看一次。'],
     identity:{lead:'它来自成熟柑橘的果皮。',sub:'从果实到干燥后的材料，变化发生在时间里。',originTitle:'从果实开始。',originText:'剥开的果皮有清楚的内外两面。此时，它仍保留新鲜果实的颜色与水分。',materialTitle:'时间参与了形成。',materialText:'水分逐渐离开，果皮变干、卷曲、变轻；颜色、纹理与触感也随之改变。',note:'时间不是唯一的质量标准。品种、原料、加工与储存同样重要。'},
