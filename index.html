@@ -62,7 +62,20 @@
     <p>视觉影像中，BC.001 陈皮继续作为母版；BC.002–BC.006 已切换到统一摄影纪律的 BENCAO Visual Study。它们用于原型观察路径，不作为植物学鉴定或药材质量证据；正式公开版仍应由自有、可核验材料重新拍摄。</p>
   </dialog>
 
+  <dialog id="cloudDialog" class="sheet-dialog">
+    <p class="eyebrow">SYNC / 记录同步</p>
+    <h2>要把你的相遇同步到云端吗？</h2>
+    <p class="dialog-lead">同步后可以换设备取回记录。我们只保存你的观察选择与文字，不做体质、性格或功效推断，记录默认不公开。不同意也可以继续使用，所有记录只留在本机。</p>
+    <div class="gate-actions">
+      <button class="gate-primary" type="button" data-cloud-consent-yes>同意并同步</button>
+      <button class="gate-secondary" type="button" data-cloud-consent-no>暂不用，只存本机</button>
+    </div>
+  </dialog>
+
   <div id="blackout" class="blackout" aria-hidden="true"></div>
-  <script src="./app.js?v=365vf3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+  <script src="./config.js?v=1"></script>
+  <script src="./cloud.js?v=1"></script>
+  <script src="./app.js?v=365vf4"></script>
 </body>
 </html>
