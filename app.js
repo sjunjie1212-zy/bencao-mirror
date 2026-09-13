@@ -249,6 +249,7 @@ function startEncounter(h,repeat=false){
   clearTimeout(advanceTimer);
   encState={index:0,values:{}};
   encStepStartedAt=performance.now();
+  if(window.Cloud) window.Cloud.beginEncounter();
   const enc=$('#encounter'); enc.hidden=false; $('#result').hidden=true; $('#personalSpectrum').hidden=true;
   buildEncounter(h);
   const transition=()=>{ enc.scrollIntoView({behavior:'auto',block:'start'}); blackout.classList.remove('on'); };
@@ -288,6 +289,7 @@ function finishEncounter(h){
   const tags=[vals.first,vals.assoc,vals.compare].filter(Boolean); $('#resultTags').innerHTML=tags.map(t=>`<span class="user-tag">${esc(t)}</span>`).join('');
   $('[data-local-count]').textContent=pad2(n); $('[data-local-smell]').textContent=pad2(n);
   $('#result').hidden=false; $('#personalSpectrum').hidden=false; $('#result').scrollIntoView({behavior:'smooth'}); track('result_view',h.id,{encounter_no:n}); renderSpectrum(); renderCatalogue();
+  if(window.Cloud) window.Cloud.submitEncounter(h,vals,n);   // 本地记录已完成，云端失败不影响结果页
 }
 
 function renderSpectrum(){
@@ -304,4 +306,5 @@ window.addEventListener('popstate',routeFromHash);
 function routeFromHash(){ const m=location.hash.match(/^#herb=(bc00[1-6])$/); if(m) openHerb(m[1],{replaceHash:true}); else showCatalogue({replaceHash:true}); }
 
 renderCatalogue(); renderSpectrum();
+if(window.Cloud) window.Cloud.init({herbs:HERBS});   // 未配置时为纯本地模式，不联网
 const initial=location.hash.match(/^#herb=(bc00[1-6])$/); if(initial) openHerb(initial[1],{replaceHash:true}); else history.replaceState(null,'','#catalogue');
