@@ -47,12 +47,17 @@ jobs:
           grep -q '四十六味本草' index.html
           grep -q '46 味可浏览本草' index.html
           grep -q 'app46.js' index.html
-          grep -q "id:'bc001'" app46.js
-          grep -q "id:'bc046'" app46.js
 
-          for n in $(seq 1 46); do
+          # BC.001–006 and BC.041–046 are explicit objects.
+          for n in $(seq 1 6) $(seq 41 46); do
             id=$(printf 'bc%03d' "$n")
-            grep -q "id:'${id}'" app46.js
+            grep -Fq "id:'${id}'" app46.js
+          done
+
+          # BC.007–040 are generated from the compact pending-data table.
+          for n in $(seq 7 40); do
+            code=$(printf '%03d' "$n")
+            grep -Fq "['${code}'" app46.js
           done
 
           for herb in bc001 bc002 bc003 bc004 bc005 bc006; do
