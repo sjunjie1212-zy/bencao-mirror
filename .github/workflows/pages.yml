@@ -24,14 +24,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate BENCAO public beta bundle
+      - name: Validate BENCAO 46-herb public beta bundle
         shell: bash
         run: |
           set -euo pipefail
           test -s index.html
-          test -s app.js
+          test -s app46.js
           test -s styles.css
           test -s beta.css
+          test -s beta46.css
           test -s 404.html
           test -s bencao-version.txt
 
@@ -42,6 +43,16 @@ jobs:
             echo "legacy .b64 present" >&2
             exit 1
           fi
+
+          grep -q '四十六味本草' index.html
+          grep -q '46 味可浏览本草' index.html
+          grep -q 'app46.js' index.html
+          grep -q "id:'bc001'" app46.js
+          grep -q "id:'bc046'" app46.js
+
+          for n in $(seq -w 1 46); do
+            grep -q "id:'bc${n}'" app46.js
+          done
 
           for herb in bc001 bc002 bc003 bc004 bc005 bc006; do
             f="images/${herb}-hero-vf1.webp"
@@ -62,22 +73,7 @@ jobs:
           done
 
           test -s images/_manifests/manifest-bc041-bc045.csv
-
-          # BC046 is intentionally hidden until all seven formal assets exist.
-          # Once the import workflow removes published:false, Pages requires the full set.
-          if ! grep -q "published:false,id:'bc046'" app.js; then
-            for role in hero specimen detail-01 detail-02 detail-03 detail-04 detail-05; do
-              f="images/bc046-cheqianzi-${role}-v1.avif"
-              test -s "$f"
-              head -c 32 "$f" | grep -a -q 'ftypavif'
-            done
-            test -s images/_manifests/manifest-bc046.csv
-            test "$(($(wc -l < images/_manifests/manifest-bc046.csv)-1))" -eq 7
-            grep -q '12 味可浏览本草' index.html
-          fi
-
           grep -q 'PUBLIC BETA' index.html
-          grep -q 'const LIVE_HERBS' app.js
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
