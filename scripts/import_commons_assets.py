@@ -8,6 +8,7 @@ import json
 import re
 import sys
 import time
+from io import BytesIO
 from pathlib import Path
 from urllib.parse import quote
 
@@ -19,17 +20,34 @@ PLAN_PATH = ROOT / "data" / "commons-asset-plan.json"
 OUT_DIR = ROOT / "images"
 MANIFEST_DIR = OUT_DIR / "_manifests"
 API = "https://commons.wikimedia.org/w/api.php"
-USER_AGENT = "BENCAO-Mirror/4.0 (+https://github.com/sjunjie1212-zy/bencao-mirror)"
+USER_AGENT = "BENCAO-Mirror/4.0 (+https://github.com/sjunjie1212-zy/bencao-mirror; contact via repository issues)"
 ROLES = ["hero", "specimen", "detail-01", "detail-02", "detail-03", "detail-04", "detail-05"]
 ALLOWED_MIME = {"image/jpeg", "image/png", "image/webp"}
 BAD_WORDS = {
     "map", "distribution", "range", "logo", "icon", "stamp", "coin", "painting",
-    "drawing", "illustration", "diagram", "herbarium", "specimen sheet", "pdf",
+    "drawing", "illustration", "diagram", "herbarium", "specimen sheet", "pdf", "karyotype",
+    "chromosome", "idiogram", "journal", "catalogue", "catalog", "woodcut", "refrigerator",
 }
 MATERIAL_WORDS = {
     "root", "rhizome", "fruit", "seed", "berry", "berries", "bark", "wood", "heartwood",
     "bud", "flower", "tuber", "bulb", "slice", "slices", "dried", "sclerotium", "stem",
     "cinnamon", "clove", "citron", "plum", "jujube", "hawthorn", "licorice", "ginseng",
+}
+ALIASES = {
+    "bc009": ["Glycyrrhiza inflata", "Glycyrrhiza glabra"],
+    "bc011": ["Astragalus membranaceus", "Astragalus membranaceus var. mongholicus"],
+    "bc012": ["Poria cocos"],
+    "bc013": ["Coix lacryma-jobi"],
+    "bc015": ["Cassia obtusifolia", "Cassia tora"],
+    "bc022": ["Lilium pumilum", "Lilium brownii var. viridulum"],
+    "bc023": ["Cinnamomum aromaticum"],
+    "bc024": ["Eugenia caryophyllata", "Caryophyllus aromaticus"],
+    "bc025": ["Amomum villosum var. xanthioides"],
+    "bc027": ["Coptis deltoidea", "Coptis teeta"],
+    "bc029": ["Alisma plantago-aquatica", "Alisma plantago-aquatica subsp. orientale"],
+    "bc034": ["Saussurea lappa"],
+    "bc036": ["Caesalpinia sappan"],
+    "bc039": ["Citrus medica var. sarcodactylus"],
 }
 
 
@@ -41,9 +59,65 @@ def clean_text(value: str | None) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def norm(value: str) -> str:
+    value = clean_text(value).lower().replace("×", " ")
+    value = re.sub(r"[^a-z0-9]+", " ", value)
+    return re.sub(r"\s+", " ", value).strip()
+
+
 def meta_value(meta: dict, key: str) -> str:
     obj = meta.get(key) or {}
     return clean_text(obj.get("value") if isinstance(obj, dict) else str(obj))
+
+
+def request_with_retry(session: requests.Session, url: str, *, params=None, timeout=(10, 45), accept_json=False) -> requests.Response:
+    last_error: Exception | None = None
+    for attempt in range(6):
+        try:
+            r = session.get(url, params=params, timeout=timeout)
+            if r.status_code == 429:
+                retry_after = r.headers.get("Retry-After")
+                try:
+                    delay = float(retry_after) if retry_after else 2.0 + attempt * 2.0
+                except ValueError:
+                    delay = 2.0 + attempt * 2.0
+                print(f"RATE LIMIT 429; sleeping {delay:.1f}s", file=sys.stderr, flush=True)
+                time.sleep(min(delay, 12.0))
+                continue
+            r.raise_for_status()
+            return r
+        except Exception as exc:
+            last_error = exc
+            if attempt >= 5:
+                break
+            time.sleep(min(1.5 * (attempt + 1), 6.0))
+    if last_error:
+        raise last_error
+    raise RuntimeError("request failed")
+
+
+def taxa_for(herb: dict) -> list[str]:
+    raw = [x.strip() for x in herb.get("plant", "").split("/") if x.strip()]
+    raw.extend(ALIASES.get(herb["id"], []))
+    out: list[str] = []
+    for taxon in raw:
+        n = norm(taxon)
+        if n and n not in out:
+            out.append(n)
+    return out
+
+
+def search_expression(query: str, taxa: list[str]) -> str:
+    qn = norm(query)
+    chosen = next((t for t in taxa if t in qn or " ".join(t.split()[:2]) in qn), taxa[0] if taxa else "")
+    genus_species = " ".join(chosen.split()[:2])
+    extras = qn
+    if chosen and chosen in extras:
+        extras = extras.replace(chosen, " ")
+    elif genus_species and genus_species in extras:
+        extras = extras.replace(genus_species, " ")
+    extras = re.sub(r"\s+", " ", extras).strip()
+    return f'"{genus_species}" {extras}'.strip() if genus_species else query
 
 
 def commons_search(session: requests.Session, query: str, limit: int = 40) -> list[dict]:
@@ -55,12 +129,12 @@ def commons_search(session: requests.Session, query: str, limit: int = 40) -> li
         "gsrsearch": query,
         "gsrnamespace": "6",
         "gsrlimit": str(limit),
-        "prop": "imageinfo",
+        "prop": "imageinfo|categories",
         "iiprop": "url|size|mime|extmetadata",
         "iiurlwidth": "1800",
+        "cllimit": "max",
     }
-    r = session.get(API, params=params, timeout=(10, 25))
-    r.raise_for_status()
+    r = request_with_retry(session, API, params=params, timeout=(10, 30), accept_json=True)
     pages = (r.json().get("query") or {}).get("pages") or []
     pages.sort(key=lambda p: p.get("index", 999999))
     return pages
@@ -70,7 +144,7 @@ def source_page(title: str) -> str:
     return "https://commons.wikimedia.org/wiki/" + quote(title.replace(" ", "_"), safe=":()_',.-")
 
 
-def candidate_from_page(page: dict, query_index: int, query: str) -> dict | None:
+def candidate_from_page(page: dict, query_index: int, query: str, taxa: list[str]) -> dict | None:
     info_list = page.get("imageinfo") or []
     if not info_list:
         return None
@@ -86,14 +160,21 @@ def candidate_from_page(page: dict, query_index: int, query: str) -> dict | None
     if not title.startswith("File:"):
         return None
     meta = info.get("extmetadata") or {}
-    lower = title.lower()
+    description = meta_value(meta, "ImageDescription")
+    categories = " ".join(c.get("title", "") for c in (page.get("categories") or []))
+    combined = norm(" ".join([title, description, categories]))
+    if taxa and not any(t in combined or " ".join(t.split()[:2]) in combined for t in taxa):
+        return None
+    if any(norm(word) in combined for word in BAD_WORDS):
+        return None
     score = 0.0
     score += min((width * height) / 2_000_000, 8.0)
     score += max(0, 5 - query_index) * 2.0
-    qwords = [w for w in re.findall(r"[a-z0-9]+", query.lower()) if len(w) > 2]
-    score += sum(1.2 for w in qwords if w in lower)
-    score += sum(1.0 for w in MATERIAL_WORDS if w in lower)
-    score -= sum(5.0 for w in BAD_WORDS if w in lower)
+    qwords = [w for w in norm(query).split() if len(w) > 2]
+    score += sum(1.0 for w in qwords if w in combined)
+    score += sum(1.1 for w in MATERIAL_WORDS if w in combined)
+    if any(w in combined for w in ("dried", "slice", "slices", "root", "rhizome", "seed", "fruit", "bark", "tuber", "bud")):
+        score += 4.0
     return {
         "title": title,
         "url": info.get("thumburl") or info.get("url") or "",
@@ -106,7 +187,8 @@ def candidate_from_page(page: dict, query_index: int, query: str) -> dict | None
         "license": meta_value(meta, "LicenseShortName") or meta_value(meta, "UsageTerms"),
         "license_url": meta_value(meta, "LicenseUrl"),
         "credit": meta_value(meta, "Credit"),
-        "description": meta_value(meta, "ImageDescription"),
+        "description": description,
+        "categories": categories,
         "query": query,
         "query_index": query_index,
         "score": score,
@@ -116,32 +198,30 @@ def candidate_from_page(page: dict, query_index: int, query: str) -> dict | None
 def collect_candidates(session: requests.Session, herb: dict) -> list[dict]:
     seen: set[str] = set()
     out: list[dict] = []
-    queries = list(herb.get("queries") or [])
-    queries.extend([herb.get("plant", ""), herb.get("name", ""), herb.get("latin", "")])
-    queries = [q.strip() for q in queries if q and q.strip()]
+    taxa = taxa_for(herb)
+    queries = [q.strip() for q in (herb.get("queries") or []) if q and q.strip()]
     for qi, query in enumerate(queries):
+        expr = search_expression(query, taxa)
         try:
-            pages = commons_search(session, query)
+            pages = commons_search(session, expr)
         except Exception as exc:
-            print(f"WARN search failed {herb['id']} {query!r}: {exc}", file=sys.stderr)
+            print(f"WARN search failed {herb['id']} {expr!r}: {exc}", file=sys.stderr)
             continue
         for page in pages:
-            c = candidate_from_page(page, qi, query)
+            c = candidate_from_page(page, qi, query, taxa)
             if not c or not c["url"] or c["title"] in seen:
                 continue
             seen.add(c["title"])
             out.append(c)
-        if len(out) >= 24:
+        if len(out) >= 22:
             break
-        time.sleep(0.05)
+        time.sleep(0.25)
     out.sort(key=lambda x: (-x["score"], -(x["width"] * x["height"]), x["title"]))
     return out
 
 
 def save_webp(session: requests.Session, c: dict, dst: Path, target_w: int, target_h: int, quality: int) -> tuple[int, int]:
-    r = session.get(c["url"], timeout=(10, 45))
-    r.raise_for_status()
-    from io import BytesIO
+    r = request_with_retry(session, c["url"], timeout=(10, 45))
     with Image.open(BytesIO(r.content)) as im:
         im = ImageOps.exif_transpose(im)
         if im.mode not in ("RGB", "RGBA"):
@@ -185,7 +265,7 @@ def main() -> int:
         slug = herb["slug"]
         print(f"\n=== {hid} {herb['name']} ===", flush=True)
         candidates = collect_candidates(session, herb)
-        print(f"candidates: {len(candidates)}", flush=True)
+        print(f"taxonomically matched candidates: {len(candidates)}", flush=True)
         chosen: list[tuple[dict, Path, str]] = []
         for c in candidates:
             if len(chosen) >= 7:
@@ -204,10 +284,10 @@ def main() -> int:
                 continue
             chosen.append((c, dst, role))
             print(f"  {role}: {c['title']} -> {filename}", flush=True)
-            time.sleep(0.03)
+            time.sleep(0.45)
 
         if len(chosen) != 7:
-            failures.append(f"{hid} {herb['name']}: only {len(chosen)}/7 usable high-resolution images")
+            failures.append(f"{hid} {herb['name']}: only {len(chosen)}/7 botanically matched high-resolution images")
             continue
 
         attribution[hid] = []
