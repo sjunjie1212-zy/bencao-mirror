@@ -13,60 +13,19 @@
 </head>
 <body>
   <header class="global-nav" id="globalNav">
-    <button class="brand" type="button" data-go-catalogue aria-label="回到本草目录">
-      <span class="brand-cn">本草镜</span>
-      <span class="brand-en">BENCAO MIRROR</span>
-    </button>
-    <nav class="nav-links" aria-label="主导航">
-      <button type="button" data-go-catalogue>本草</button>
-      <button type="button" data-open-about>关于测试版</button>
-    </nav>
+    <button class="brand" type="button" data-go-catalogue aria-label="回到本草目录"><span class="brand-cn">本草镜</span><span class="brand-en">BENCAO MIRROR</span></button>
+    <nav class="nav-links" aria-label="主导航"><button type="button" data-go-catalogue>本草</button><button type="button" data-open-about>关于测试版</button></nav>
     <div class="nav-meta">PUBLIC BETA · 4.0</div>
   </header>
-
   <main id="app">
     <section id="catalogueView" class="catalogue-view" aria-label="本草目录">
-      <aside class="catalogue-aside">
-        <p class="eyebrow">BENCAO / HERB INDEX</p>
-        <h1>本草</h1>
-        <p class="catalogue-thesis">草木不是答案，<br>是一次相遇。<br><br>先看整体，<br>再靠近细节。</p>
-        <div class="beta-aside-meta">
-          <p id="catalogueTotal">12 味可浏览本草</p>
-          <p class="catalogue-count" id="catalogueCount">已浏览 0 / 12</p>
-        </div>
-      </aside>
-      <div class="catalogue-main">
-        <div class="catalogue-heading">
-          <div>
-            <p class="eyebrow">PUBLIC TEST / VISUAL ARCHIVE</p>
-            <h2>可浏览本草</h2>
-          </div>
-          <p>目前开放已具备可用影像资产的条目。<br>编号空缺代表仍在整理，不代表药材不存在。</p>
-        </div>
-        <div class="beta-status"><span>测试重点</span><b>图片是否准确、页面是否好用、你会不会愿意继续看下一味？</b></div>
-        <div class="herb-grid" id="herbGrid"></div>
-      </div>
+      <aside class="catalogue-aside"><p class="eyebrow">BENCAO / HERB INDEX</p><h1>本草</h1><p class="catalogue-thesis">草木不是答案，<br>是一次相遇。<br><br>先看整体，<br>再靠近细节。</p><div class="beta-aside-meta"><p id="catalogueTotal">11 味可浏览本草</p><p class="catalogue-count" id="catalogueCount">已浏览 0 / 11</p></div></aside>
+      <div class="catalogue-main"><div class="catalogue-heading"><div><p class="eyebrow">PUBLIC TEST / VISUAL ARCHIVE</p><h2>可浏览本草</h2></div><p>目前开放已具备可用影像资产的条目。<br>编号空缺代表仍在整理，不代表药材不存在。</p></div><div class="beta-status"><span>测试重点</span><b>图片是否准确、页面是否好用、你会不会愿意继续看下一味？</b></div><div class="herb-grid" id="herbGrid"></div></div>
     </section>
     <section id="detailView" class="detail-view" hidden></section>
   </main>
-
-  <dialog id="aboutDialog" class="sheet-dialog">
-    <button class="dialog-close" type="button" data-dialog-close aria-label="关闭">×</button>
-    <p class="eyebrow">ABOUT / PUBLIC BETA</p>
-    <h2>这是本草镜的朋友测试版。</h2>
-    <p class="dialog-lead">这一版优先验证视觉体验与浏览路径：图片够不够真实、细节有没有帮助、目录和详情是否顺手。内容仍会持续校正。</p>
-    <div class="about-rule"></div>
-    <p>本草镜不是在线问诊、处方或药材质量鉴定工具。页面中的传统本草名称、来源与药用部位用于文化与材料观察；如涉及用药、疾病或个人健康决策，请使用可靠的专业医疗信息来源。</p>
-    <p class="beta-about-note">如果你是第一次使用：任选一味进入图集，看看你会不会自然地继续翻到下一张、下一味。把卡住你的地方直接告诉分享给你这个链接的人即可。</p>
-  </dialog>
-
-  <dialog id="imageDialog" class="beta-lightbox">
-    <button class="beta-lightbox-close" type="button" data-dialog-close aria-label="关闭">×</button>
-    <button class="beta-lightbox-prev" type="button" data-prev-image aria-label="上一张">←</button>
-    <figure><img id="lightboxImage" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
-    <button class="beta-lightbox-next" type="button" data-next-image aria-label="下一张">→</button>
-  </dialog>
-
+  <dialog id="aboutDialog" class="sheet-dialog"><button class="dialog-close" type="button" data-dialog-close aria-label="关闭">×</button><p class="eyebrow">ABOUT / PUBLIC BETA</p><h2>这是本草镜的朋友测试版。</h2><p class="dialog-lead">这一版优先验证视觉体验与浏览路径：图片够不够真实、细节有没有帮助、目录和详情是否顺手。内容仍会持续校正。</p><div class="about-rule"></div><p>本草镜不是在线问诊、处方或药材质量鉴定工具。页面中的传统本草名称、来源与药用部位用于文化与材料观察；如涉及用药、疾病或个人健康决策，请使用可靠的专业医疗信息来源。</p><p class="beta-about-note">如果你是第一次使用：任选一味进入图集，看看你会不会自然地继续翻到下一张、下一味。把卡住你的地方直接告诉分享给你这个链接的人即可。</p></dialog>
+  <dialog id="imageDialog" class="beta-lightbox"><button class="beta-lightbox-close" type="button" data-dialog-close aria-label="关闭">×</button><button class="beta-lightbox-prev" type="button" data-prev-image aria-label="上一张">←</button><figure><img id="lightboxImage" alt=""><figcaption id="lightboxCaption"></figcaption></figure><button class="beta-lightbox-next" type="button" data-next-image aria-label="下一张">→</button></dialog>
   <script src="./app.js?v=400b1"></script>
 </body>
 </html>
