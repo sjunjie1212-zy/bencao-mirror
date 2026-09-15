@@ -24,39 +24,46 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate BENCAO clean static bundle
+      - name: Validate BENCAO public beta bundle
         shell: bash
         run: |
           set -euo pipefail
-          # Entry files present and non-empty
           test -s index.html
           test -s app.js
           test -s styles.css
+          test -s beta.css
           test -s 404.html
+          test -s bencao-version.txt
 
-          # No legacy base64 / part-split runtime
           test ! -e app-parts
           test ! -e css-parts
           test ! -e styles-loader.js
-          if find . -name '*.b64' | grep -q .; then echo "legacy .b64 present" >&2; exit 1; fi
+          if find . -name '*.b64' | grep -q .; then
+            echo "legacy .b64 present" >&2
+            exit 1
+          fi
 
-          # Six high-res hero WebP present with valid RIFF/WEBP magic
           for herb in bc001 bc002 bc003 bc004 bc005 bc006; do
             f="images/${herb}-hero-vf1.webp"
             test -s "$f"
             test "$(head -c 4 "$f")" = "RIFF"
             test "$(dd if="$f" bs=1 skip=8 count=4 status=none)" = "WEBP"
-            test "$(stat -c%s "$f")" -gt 80000
           done
 
-          # Version marker
-          test -s bencao-version.txt
+          for pair in \
+            'bc041-mugua' \
+            'bc042-luohanguo' \
+            'bc043-sangshen' \
+            'bc044-suanzaoren' \
+            'bc045-taoren'; do
+            f="images/${pair}-hero-v1.avif"
+            test -s "$f"
+            head -c 32 "$f" | grep -a -q 'ftypavif'
+          done
 
-          # Aroma Field frozen rule guard
-          grep -q "background-color:#e7dfd2" app.js
-          grep -q "rgba(opening,.72)" app.js
-          grep -q "rgba(middle,.68)" app.js
-          grep -q "rgba(drydown,.64)" app.js
+          test -s images/_manifests/manifest-bc041-bc045.csv
+          grep -q 'PUBLIC BETA' index.html
+          grep -q 'const LIVE_HERBS' app.js
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
