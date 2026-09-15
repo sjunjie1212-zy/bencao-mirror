@@ -4,9 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#ECE9E1" />
-  <title>本草镜 BENCAO MIRROR｜六味本草</title>
-  <meta name="description" content="本草镜：连接人与真实草木的智能感官系统。" />
+  <meta name="description" content="本草镜：从屏幕回到草木的数字本草观察体验。公开测试版。" />
+  <meta property="og:title" content="本草镜 BENCAO MIRROR｜公开测试版" />
+  <meta property="og:description" content="浏览本草材料图集，从整体到细节认识真实草木。" />
+  <title>本草镜 BENCAO MIRROR｜公开测试版</title>
   <link rel="stylesheet" href="./styles.css?v=365vf3" />
+  <link rel="stylesheet" href="./beta.css?v=400b1" />
 </head>
 <body>
   <header class="global-nav" id="globalNav">
@@ -16,10 +19,9 @@
     </button>
     <nav class="nav-links" aria-label="主导航">
       <button type="button" data-go-catalogue>本草</button>
-      <button type="button" data-open-spectrum>我的本草谱</button>
-      <button type="button" data-open-about>关于</button>
+      <button type="button" data-open-about>关于测试版</button>
     </nav>
-    <div class="nav-meta">DIGITAL HERBARIUM · AF02</div>
+    <div class="nav-meta">PUBLIC BETA · 4.0</div>
   </header>
 
   <main id="app">
@@ -27,55 +29,44 @@
       <aside class="catalogue-aside">
         <p class="eyebrow">BENCAO / HERB INDEX</p>
         <h1>本草</h1>
-        <p class="catalogue-thesis">草木不是答案，<br>是一次相遇。<br><br>从屏幕回到草木，<br>在真实世界里，<br>认识它，也认识自己的感受。</p>
-        <p class="catalogue-count" id="catalogueCount">已遇见 0 / 6</p>
+        <p class="catalogue-thesis">草木不是答案，<br>是一次相遇。<br><br>先看整体，<br>再靠近细节。</p>
+        <div class="beta-aside-meta">
+          <p id="catalogueTotal">12 味可浏览本草</p>
+          <p class="catalogue-count" id="catalogueCount">已浏览 0 / 12</p>
+        </div>
       </aside>
       <div class="catalogue-main">
         <div class="catalogue-heading">
           <div>
-            <p class="eyebrow">VISUAL UNIFICATION 01</p>
-            <h2>六味本草</h2>
+            <p class="eyebrow">PUBLIC TEST / VISUAL ARCHIVE</p>
+            <h2>可浏览本草</h2>
           </div>
-          <p>同一套骨架，不同的材料性格。<br>每一味都从真实观察开始。</p>
+          <p>目前开放已具备可用影像资产的条目。<br>编号空缺代表仍在整理，不代表药材不存在。</p>
         </div>
+        <div class="beta-status"><span>测试重点</span><b>图片是否准确、页面是否好用、你会不会愿意继续看下一味？</b></div>
         <div class="herb-grid" id="herbGrid"></div>
       </div>
     </section>
-
     <section id="detailView" class="detail-view" hidden></section>
   </main>
 
-  <dialog id="spectrumDialog" class="sheet-dialog">
-    <button class="dialog-close" type="button" data-dialog-close aria-label="关闭">×</button>
-    <p class="eyebrow">ARCHIVE / PERSONAL</p>
-    <h2>我的本草谱</h2>
-    <p class="dialog-lead">这里只记录真实发生过的相遇，不做体质、性格或功效推断。</p>
-    <div class="spectrum-grid" id="spectrumGrid"></div>
-  </dialog>
-
   <dialog id="aboutDialog" class="sheet-dialog">
     <button class="dialog-close" type="button" data-dialog-close aria-label="关闭">×</button>
-    <p class="eyebrow">ABOUT / 本草镜</p>
-    <h2>从屏幕回到草木。</h2>
-    <p class="dialog-lead">本草镜不是在线问诊或功效查询工具。数字界面只负责帮助你认识材料、靠近材料，并保存一次真实的感官相遇。</p>
+    <p class="eyebrow">ABOUT / PUBLIC BETA</p>
+    <h2>这是本草镜的朋友测试版。</h2>
+    <p class="dialog-lead">这一版优先验证视觉体验与浏览路径：图片够不够真实、细节有没有帮助、目录和详情是否顺手。内容仍会持续校正。</p>
     <div class="about-rule"></div>
-    <p>视觉影像中，BC.001 陈皮继续作为母版；BC.002–BC.006 已切换到统一摄影纪律的 BENCAO Visual Study。它们用于原型观察路径，不作为植物学鉴定或药材质量证据；正式公开版仍应由自有、可核验材料重新拍摄。</p>
+    <p>本草镜不是在线问诊、处方或药材质量鉴定工具。页面中的传统本草名称、来源与药用部位用于文化与材料观察；如涉及用药、疾病或个人健康决策，请使用可靠的专业医疗信息来源。</p>
+    <p class="beta-about-note">如果你是第一次使用：任选一味进入图集，看看你会不会自然地继续翻到下一张、下一味。把卡住你的地方直接告诉分享给你这个链接的人即可。</p>
   </dialog>
 
-  <dialog id="cloudDialog" class="sheet-dialog">
-    <p class="eyebrow">SYNC / 记录同步</p>
-    <h2>要把你的相遇同步到云端吗？</h2>
-    <p class="dialog-lead">同步后可以换设备取回记录。我们只保存你的观察选择与文字，不做体质、性格或功效推断，记录默认不公开。不同意也可以继续使用，所有记录只留在本机。</p>
-    <div class="gate-actions">
-      <button class="gate-primary" type="button" data-cloud-consent-yes>同意并同步</button>
-      <button class="gate-secondary" type="button" data-cloud-consent-no>暂不用，只存本机</button>
-    </div>
+  <dialog id="imageDialog" class="beta-lightbox">
+    <button class="beta-lightbox-close" type="button" data-dialog-close aria-label="关闭">×</button>
+    <button class="beta-lightbox-prev" type="button" data-prev-image aria-label="上一张">←</button>
+    <figure><img id="lightboxImage" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+    <button class="beta-lightbox-next" type="button" data-next-image aria-label="下一张">→</button>
   </dialog>
 
-  <div id="blackout" class="blackout" aria-hidden="true"></div>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
-  <script src="./config.js?v=1"></script>
-  <script src="./cloud.js?v=1"></script>
-  <script src="./app.js?v=365vf4"></script>
+  <script src="./app.js?v=400b1"></script>
 </body>
 </html>
