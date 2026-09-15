@@ -1,0 +1,36 @@
+﻿code,chinese_name,latin_name,role,filename,width_px,height_px,format,status,formal_hd_asset,sha256
+BC041,木瓜,Chaenomelis Fructus,detail-01,bc041-mugua-detail-01-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,4366d92f5d0b917c22c2f8cb95246209c7c1f47ff6cf21788097547b02780974
+BC041,木瓜,Chaenomelis Fructus,detail-02,bc041-mugua-detail-02-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,683c44f07a06fc7c4ecec00331a33028cc994d44ba87a6581a481da5da95245d
+BC041,木瓜,Chaenomelis Fructus,detail-03,bc041-mugua-detail-03-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,41d15700715d9e16dbc5c227daf1fc27bf5174659fcd522a2cd783d0841dfe3c
+BC041,木瓜,Chaenomelis Fructus,detail-04,bc041-mugua-detail-04-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,b82559e23a82cea9ab10d9336ca8c48e7d97d59e343311a86e7aed90c372c6ab
+BC041,木瓜,Chaenomelis Fructus,detail-05,bc041-mugua-detail-05-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,1a4a8b530b1f24e3a278828573196f5ea705cc5c8a9b625716e41de1dc3a1abc
+BC041,木瓜,Chaenomelis Fructus,hero,bc041-mugua-hero-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,b53c8b0d36a674f4235bbece52e8665dbd703149259154602e5a01a3843a8b3e
+BC041,木瓜,Chaenomelis Fructus,specimen,bc041-mugua-specimen-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,a67306b40daef28fd21ee774ed7a68449925e9e45b7e7f86a7af916297c31b7c
+BC042,罗汉果,Siraitiae Fructus,detail-01,bc042-luohanguo-detail-01-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,774bd3029e9d7b0ea7eb7330f9fb91f13c855a9cd7ab7d0ca452f35f87e696e5
+BC042,罗汉果,Siraitiae Fructus,detail-02,bc042-luohanguo-detail-02-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,6a809dfcd465bd281afa1ada9ca1c6d4f4b618304e11ff95975b9d143d52dcfe
+BC042,罗汉果,Siraitiae Fructus,detail-03,bc042-luohanguo-detail-03-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,0df1b717aba3b44573bf25857e1d3f0f1503665e98ef9a7895fd23e539f48514
+BC042,罗汉果,Siraitiae Fructus,detail-04,bc042-luohanguo-detail-04-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,fce19563ce44b0c0d80303f344adaf5db4bde976c6f3e319c1b52c44d5cb1ff6
+BC042,罗汉果,Siraitiae Fructus,detail-05,bc042-luohanguo-detail-05-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,6fd22ff689787eb203cd5c9bc69c9cc543f25aa886684ced231390429fca47a4
+BC042,罗汉果,Siraitiae Fructus,hero,bc042-luohanguo-hero-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,5db0e6d0a87a80585a09dab89eb70ca465227e61582d9449eb2d771d0dc2daba
+BC042,罗汉果,Siraitiae Fructus,specimen,bc042-luohanguo-specimen-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,73549f59c40dd3bad7cd59e2cde7b9bf91b6df307f65d55e6a569b8fdffe0e8c
+BC043,桑椹,Mori Fructus,detail-01,bc043-sangshen-detail-01-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,ab7a6f79e6ccd845f2e977da23e03fb4e43b9b4f130f72f3496a325782791b31
+BC043,桑椹,Mori Fructus,detail-02,bc043-sangshen-detail-02-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,91b61c532aadc2e6ed3bc0251505b11361d00aba3d1d53f8679a9ffba553e25d
+BC043,桑椹,Mori Fructus,detail-03,bc043-sangshen-detail-03-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,35d04bc502d351645b084a3e1a123eedacc315fc67a2ae5d68085ae196236ab8
+BC043,桑椹,Mori Fructus,detail-04,bc043-sangshen-detail-04-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,0849ba44d266454484a0811de33ab18a2f7e58cbdea246e78e9e844f011b7d29
+BC043,桑椹,Mori Fructus,detail-05,bc043-sangshen-detail-05-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,031416841393d363bc867a2ef82b5cd72ac6f8b5ff210ff1b4fc5fd1eb309b04
+BC043,桑椹,Mori Fructus,hero,bc043-sangshen-hero-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,e05b2d6e3233eb3e921b38f867b3f88e11579c480cdb846f8f082277d2ca6718
+BC043,桑椹,Mori Fructus,specimen,bc043-sangshen-specimen-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,a183f42baa90a37fc2b660d7290a2d84da8d8534206af21fd47873581833f251
+BC044,酸枣仁,Ziziphi Spinosae Semen,detail-01,bc044-suanzaoren-detail-01-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,12565cc342aabd719889b31e204db01d25a703d453496ab0e625686284ea3d96
+BC044,酸枣仁,Ziziphi Spinosae Semen,detail-02,bc044-suanzaoren-detail-02-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,5a10f92de0193427c016b51199a8b356327248dc6fdf212c05d8da99475e7b67
+BC044,酸枣仁,Ziziphi Spinosae Semen,detail-03,bc044-suanzaoren-detail-03-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,20c3fb5bc24fc60369699d14482a753cab07d53ec57ef9410354d8af89809831
+BC044,酸枣仁,Ziziphi Spinosae Semen,detail-04,bc044-suanzaoren-detail-04-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,fc6c518f176a5ccae613e48516588c514c0fb0d3f4981a9524aa15763095f1e2
+BC044,酸枣仁,Ziziphi Spinosae Semen,detail-05,bc044-suanzaoren-detail-05-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,61dfd0630cdc7f39756d79dde4c9f0f0666d4a4b30770e9a62a088b899cf78e9
+BC044,酸枣仁,Ziziphi Spinosae Semen,hero,bc044-suanzaoren-hero-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,23118d07fb8f1ee54dc40fd8533f319949b927eeb2f99d5ec228ea74fcee0e0f
+BC044,酸枣仁,Ziziphi Spinosae Semen,specimen,bc044-suanzaoren-specimen-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,af5dda6de62b348f0939d0c63c6e2d3cb0bd7644310c73c31e9bf0a1d94421e7
+BC045,桃仁,Persicae Semen,detail-01,bc045-taoren-detail-01-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,816abdb94699fef6b64fada4a3abfbc3ce3a81cf54cf73b2b9088dbef43b4e80
+BC045,桃仁,Persicae Semen,detail-02,bc045-taoren-detail-02-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,a194e4b7c7e0cb70ba03aa3d3c60f192b401e01bcb16034bee98d33881e13b34
+BC045,桃仁,Persicae Semen,detail-03,bc045-taoren-detail-03-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,bd70f01c0de7bb38231884f363987dc795685ad2dfee8d9c768b144ec6c2dcfe
+BC045,桃仁,Persicae Semen,detail-04,bc045-taoren-detail-04-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,d74f1791b52852f629c0427c8a772eb6d6c14299f585b5ae9dc6ff82f8954684
+BC045,桃仁,Persicae Semen,detail-05,bc045-taoren-detail-05-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,a2282fc817e233c68d0a187922559592a1b3701c648a709ed19070841499e6f5
+BC045,桃仁,Persicae Semen,hero,bc045-taoren-hero-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,83f1327e871d8e43a5b9c84eb3aa1d61e0242b982488541b0cf753ab051e7f7b
+BC045,桃仁,Persicae Semen,specimen,bc045-taoren-specimen-v1.avif,1122,1402,AVIF,formal_hd_asset,yes,60adf9ebc2a2ec90758e71a7f8e1446873337dbde9a019607035e42c5f0e9f47
