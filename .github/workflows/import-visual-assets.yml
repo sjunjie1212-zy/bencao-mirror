@@ -17,7 +17,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Reassemble chunked archive
+      - name: Reassemble legacy chunked archive
         shell: bash
         run: |
           shopt -s nullglob
@@ -30,6 +30,7 @@ jobs:
       - name: Import packaged assets
         shell: bash
         run: |
+          set -euo pipefail
           shopt -s nullglob
           archives=(asset-import/*.zip)
           if [ ${#archives[@]} -eq 0 ]; then
@@ -37,6 +38,8 @@ jobs:
             exit 0
           fi
           for archive in "${archives[@]}"; do
+            echo "Importing ${archive}"
+            unzip -t "$archive"
             unzip -o "$archive" -d .
             rm -f "$archive"
           done
@@ -45,15 +48,65 @@ jobs:
             mv ASSET_IMPORT_MANIFEST.csv images/_manifests/manifest-bc041-bc045.csv
           fi
 
+      - name: Validate and publish BC046 when complete
+        shell: bash
+        run: |
+          set -euo pipefail
+          hero="images/bc046-cheqianzi-hero-v1.avif"
+          if [ ! -f "$hero" ]; then
+            echo "BC046 not part of this import."
+            exit 0
+          fi
+
+          for role in hero specimen detail-01 detail-02 detail-03 detail-04 detail-05; do
+            f="images/bc046-cheqianzi-${role}-v1.avif"
+            test -s "$f"
+            head -c 32 "$f" | grep -a -q 'ftypavif'
+          done
+          test -s images/_manifests/manifest-bc046.csv
+          test "$(($(wc -l < images/_manifests/manifest-bc046.csv)-1))" -eq 7
+
+          python3 - <<'PY'
+          from pathlib import Path
+
+          app = Path('app.js')
+          text = app.read_text(encoding='utf-8')
+          text = text.replace("herb({published:false,id:'bc046'", "herb({id:'bc046'", 1)
+          app.write_text(text, encoding='utf-8')
+
+          index = Path('index.html')
+          text = index.read_text(encoding='utf-8')
+          text = text.replace('11 味可浏览本草', '12 味可浏览本草')
+          text = text.replace('已浏览 0 / 11', '已浏览 0 / 12')
+          index.write_text(text, encoding='utf-8')
+
+          asset_index = Path('images/ASSET_INDEX.md')
+          text = asset_index.read_text(encoding='utf-8')
+          text = text.replace(
+              '| BC.046 | 车前子 | 🟡 7 张高清资产已整理；待二进制正式入库，公开页暂隐藏 |',
+              '| BC.046 | 车前子 | ✅ 正式完成 7/7；AVIF 1122×1402 |'
+          )
+          text = text.replace(
+              '- 当前公开：BC.001–006、BC.041–045，共 11 味',
+              '- 当前公开：BC.001–006、BC.041–046，共 12 味'
+          )
+          text = text.replace(
+              '- BC.046：资产已整理，正式入库后再开放，避免公开页出现断图',
+              '- BC.046：✅ 已正式入库并开放'
+          )
+          asset_index.write_text(text, encoding='utf-8')
+          PY
+
       - name: Commit imported assets
         shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add images asset-import .github/workflows/import-visual-assets.yml
+          git add images asset-import app.js index.html .github/workflows/import-visual-assets.yml
           if git diff --cached --quiet; then
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "assets: import formal visual assets"
+          git commit -m "assets: import and publish formal visual assets"
           git push
