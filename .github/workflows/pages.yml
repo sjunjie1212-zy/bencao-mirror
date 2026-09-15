@@ -62,6 +62,20 @@ jobs:
           done
 
           test -s images/_manifests/manifest-bc041-bc045.csv
+
+          # BC046 is intentionally hidden until all seven formal assets exist.
+          # Once the import workflow removes published:false, Pages requires the full set.
+          if ! grep -q "published:false,id:'bc046'" app.js; then
+            for role in hero specimen detail-01 detail-02 detail-03 detail-04 detail-05; do
+              f="images/bc046-cheqianzi-${role}-v1.avif"
+              test -s "$f"
+              head -c 32 "$f" | grep -a -q 'ftypavif'
+            done
+            test -s images/_manifests/manifest-bc046.csv
+            test "$(($(wc -l < images/_manifests/manifest-bc046.csv)-1))" -eq 7
+            grep -q '12 味可浏览本草' index.html
+          fi
+
           grep -q 'PUBLIC BETA' index.html
           grep -q 'const LIVE_HERBS' app.js
 
