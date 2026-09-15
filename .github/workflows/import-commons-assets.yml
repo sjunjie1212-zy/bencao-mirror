@@ -1,0 +1,66 @@
+name: Import missing BENCAO HD assets
+
+on:
+  push:
+    paths:
+      - 'data/commons-asset-plan.json'
+      - 'scripts/import_commons_assets.py'
+      - '.github/workflows/import-commons-assets.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: commons-hd-asset-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install importer dependencies
+        run: python -m pip install --upgrade requests Pillow
+
+      - name: Import and normalize 35 missing herb sets
+        run: python scripts/import_commons_assets.py
+
+      - name: Validate 245 generated HD assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s images/_manifests/manifest-bc007-bc040-bc046.csv
+          rows=$(( $(wc -l < images/_manifests/manifest-bc007-bc040-bc046.csv) - 1 ))
+          test "$rows" -eq 245
+          for n in $(seq -w 7 40) 46; do
+            count=$(find images -maxdepth 1 -type f -name "bc0${n}-*-v1.webp" | wc -l)
+            if [ "$n" = "46" ]; then id="bc046"; else id="bc0${n}"; fi
+            count=$(find images -maxdepth 1 -type f -name "${id}-*-v1.webp" | wc -l)
+            test "$count" -eq 7
+          done
+
+      - name: Commit imported HD assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images/_manifests images/*.webp
+          if git diff --cached --quiet; then
+            echo "No HD asset changes to commit."
+            exit 0
+          fi
+          git commit -m "assets: import 245 HD images for BC007-BC040 and BC046"
+          git pull --rebase origin main
+          git push origin HEAD:main
