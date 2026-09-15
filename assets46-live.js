@@ -1,4 +1,17 @@
 (() => {
+  const existingSpecimens = {
+    bc002:'./images/bc002-atlas-plate-vu1.jpg',
+    bc003:'./images/bc003-atlas-plate-vu1.jpg',
+    bc004:'./images/bc004-atlas-plate-vu1.jpg',
+    bc005:'./images/bc005-atlas-plate-vu1.jpg',
+    bc006:'./images/bc006-atlas-plate-vu1.jpg'
+  };
+  Object.entries(existingSpecimens).forEach(([id, specimen]) => {
+    const h = HERBS.find(x => x.id === id);
+    if (!h || !Array.isArray(h.images) || h.images.includes(specimen)) return;
+    h.images = [h.images[0], specimen, ...h.images.slice(1)];
+  });
+
   const imported = [
     ['bc007','jinyinhua','Lonicera japonica'],
     ['bc008','shanzha','Crataegus pinnatifida'],
