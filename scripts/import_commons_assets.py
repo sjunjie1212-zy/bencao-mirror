@@ -46,7 +46,7 @@ def meta_value(meta: dict, key: str) -> str:
     return clean_text(obj.get("value") if isinstance(obj, dict) else str(obj))
 
 
-def commons_search(session: requests.Session, query: str, limit: int = 50) -> list[dict]:
+def commons_search(session: requests.Session, query: str, limit: int = 40) -> list[dict]:
     params = {
         "action": "query",
         "format": "json",
@@ -57,8 +57,9 @@ def commons_search(session: requests.Session, query: str, limit: int = 50) -> li
         "gsrlimit": str(limit),
         "prop": "imageinfo",
         "iiprop": "url|size|mime|extmetadata",
+        "iiurlwidth": "1800",
     }
-    r = session.get(API, params=params, timeout=45)
+    r = session.get(API, params=params, timeout=(10, 25))
     r.raise_for_status()
     pages = (r.json().get("query") or {}).get("pages") or []
     pages.sort(key=lambda p: p.get("index", 999999))
@@ -95,7 +96,8 @@ def candidate_from_page(page: dict, query_index: int, query: str) -> dict | None
     score -= sum(5.0 for w in BAD_WORDS if w in lower)
     return {
         "title": title,
-        "url": info.get("url") or "",
+        "url": info.get("thumburl") or info.get("url") or "",
+        "original_url": info.get("url") or "",
         "description_url": info.get("descriptionurl") or source_page(title),
         "width": width,
         "height": height,
@@ -129,15 +131,15 @@ def collect_candidates(session: requests.Session, herb: dict) -> list[dict]:
                 continue
             seen.add(c["title"])
             out.append(c)
-        if len(out) >= 28:
+        if len(out) >= 24:
             break
-        time.sleep(0.15)
+        time.sleep(0.05)
     out.sort(key=lambda x: (-x["score"], -(x["width"] * x["height"]), x["title"]))
     return out
 
 
 def save_webp(session: requests.Session, c: dict, dst: Path, target_w: int, target_h: int, quality: int) -> tuple[int, int]:
-    r = session.get(c["url"], timeout=90)
+    r = session.get(c["url"], timeout=(10, 45))
     r.raise_for_status()
     from io import BytesIO
     with Image.open(BytesIO(r.content)) as im:
@@ -202,7 +204,7 @@ def main() -> int:
                 continue
             chosen.append((c, dst, role))
             print(f"  {role}: {c['title']} -> {filename}", flush=True)
-            time.sleep(0.10)
+            time.sleep(0.03)
 
         if len(chosen) != 7:
             failures.append(f"{hid} {herb['name']}: only {len(chosen)}/7 usable high-resolution images")
