@@ -1,0 +1,20 @@
+name: Cancel stale asset import
+
+on:
+  push:
+    paths:
+      - '.github/workflows/cancel-stale-asset-import.yml'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel stale import run #3
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST repos/${{ github.repository }}/actions/runs/34983028603/cancel || true
