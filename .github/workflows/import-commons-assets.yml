@@ -13,12 +13,12 @@ permissions:
 
 concurrency:
   group: commons-hd-asset-import
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -44,7 +44,6 @@ jobs:
           rows=$(( $(wc -l < images/_manifests/manifest-bc007-bc040-bc046.csv) - 1 ))
           test "$rows" -eq 245
           for n in $(seq -w 7 40) 46; do
-            count=$(find images -maxdepth 1 -type f -name "bc0${n}-*-v1.webp" | wc -l)
             if [ "$n" = "46" ]; then id="bc046"; else id="bc0${n}"; fi
             count=$(find images -maxdepth 1 -type f -name "${id}-*-v1.webp" | wc -l)
             test "$count" -eq 7
