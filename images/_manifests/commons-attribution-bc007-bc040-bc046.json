@@ -1,0 +1,2277 @@
+{
+  "bc007": [
+    {
+      "role": "hero",
+      "filename": "bc007-jinyinhua-hero-v1.webp",
+      "source_title": "File:Lonicera japonica flowers and pink buds - Fukufukurou.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lonicera_japonica_flowers_and_pink_buds_-_Fukufukurou.jpg",
+      "author": "Fukufukurou",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc007-jinyinhua-specimen-v1.webp",
+      "source_title": "File:Honeysuckle flowers.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Honeysuckle_flowers.jpg",
+      "author": "Bill T from Houston, USA",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc007-jinyinhua-detail-01-v1.webp",
+      "source_title": "File:Japanese Honeysuckle (Lonicera japonica) 1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Japanese_Honeysuckle_(Lonicera_japonica)_1.jpg",
+      "author": "Mokkie",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc007-jinyinhua-detail-02-v1.webp",
+      "source_title": "File:Lonicera japonica flowers and pink buds - Fukufukurou.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lonicera_japonica_flowers_and_pink_buds_-_Fukufukurou.jpg",
+      "author": "Fukufukurou",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc007-jinyinhua-detail-03-v1.webp",
+      "source_title": "File:Honeysuckle flowers.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Honeysuckle_flowers.jpg",
+      "author": "Bill T from Houston, USA",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc007-jinyinhua-detail-04-v1.webp",
+      "source_title": "File:Japanese Honeysuckle (Lonicera japonica) 1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Japanese_Honeysuckle_(Lonicera_japonica)_1.jpg",
+      "author": "Mokkie",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc007-jinyinhua-detail-05-v1.webp",
+      "source_title": "File:Lonicera japonica flowers and pink buds - Fukufukurou.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lonicera_japonica_flowers_and_pink_buds_-_Fukufukurou.jpg",
+      "author": "Fukufukurou",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "bc008": [
+    {
+      "role": "hero",
+      "filename": "bc008-shanzha-hero-v1.webp",
+      "source_title": "File:HawthornFruit.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HawthornFruit.JPG",
+      "author": "Yongxinge",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc008-shanzha-specimen-v1.webp",
+      "source_title": "File:HK herbal 山楂片 sliced Shan Zha cooked Crataegus pinnatifida Bung October 2025 N13P.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_herbal_%E5%B1%B1%E6%A5%82%E7%89%87_sliced_Shan_Zha_cooked_Crataegus_pinnatifida_Bung_October_2025_N13P.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc008-shanzha-detail-01-v1.webp",
+      "source_title": "File:Crataegus pinnatifida fruit (detail), Yongin.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Crataegus_pinnatifida_fruit_(detail),_Yongin.jpg",
+      "author": "No machine-readable author provided. PuzzletChung assumed (based on copyright claims).",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc008-shanzha-detail-02-v1.webp",
+      "source_title": "File:HawthornFruit.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HawthornFruit.JPG",
+      "author": "Yongxinge",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc008-shanzha-detail-03-v1.webp",
+      "source_title": "File:HK herbal 山楂片 sliced Shan Zha cooked Crataegus pinnatifida Bung October 2025 N13P.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_herbal_%E5%B1%B1%E6%A5%82%E7%89%87_sliced_Shan_Zha_cooked_Crataegus_pinnatifida_Bung_October_2025_N13P.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc008-shanzha-detail-04-v1.webp",
+      "source_title": "File:Crataegus pinnatifida fruit (detail), Yongin.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Crataegus_pinnatifida_fruit_(detail),_Yongin.jpg",
+      "author": "No machine-readable author provided. PuzzletChung assumed (based on copyright claims).",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc008-shanzha-detail-05-v1.webp",
+      "source_title": "File:HawthornFruit.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HawthornFruit.JPG",
+      "author": "Yongxinge",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  ],
+  "bc009": [
+    {
+      "role": "hero",
+      "filename": "bc009-gancao-hero-v1.webp",
+      "source_title": "File:Glycyrrhiza glabra (Pile of Spanish wood chips).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Glycyrrhiza_glabra_(Pile_of_Spanish_wood_chips).jpg",
+      "author": "Erin Silversmith",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc009-gancao-specimen-v1.webp",
+      "source_title": "File:Inner Mongolia Ulanqab Liuyepianhong licorice slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Inner_Mongolia_Ulanqab_Liuyepianhong_licorice_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc009-gancao-detail-01-v1.webp",
+      "source_title": "File:Licorice slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Licorice_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc009-gancao-detail-02-v1.webp",
+      "source_title": "File:Glycyrrhiza glabra (Pile of Spanish wood chips).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Glycyrrhiza_glabra_(Pile_of_Spanish_wood_chips).jpg",
+      "author": "Erin Silversmith",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc009-gancao-detail-03-v1.webp",
+      "source_title": "File:Inner Mongolia Ulanqab Liuyepianhong licorice slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Inner_Mongolia_Ulanqab_Liuyepianhong_licorice_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc009-gancao-detail-04-v1.webp",
+      "source_title": "File:Licorice slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Licorice_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc009-gancao-detail-05-v1.webp",
+      "source_title": "File:Glycyrrhiza glabra (Pile of Spanish wood chips).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Glycyrrhiza_glabra_(Pile_of_Spanish_wood_chips).jpg",
+      "author": "Erin Silversmith",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "bc010": [
+    {
+      "role": "hero",
+      "filename": "bc010-danggui-hero-v1.webp",
+      "source_title": "File:Dried angelica slices (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_angelica_slices_(2).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc010-danggui-specimen-v1.webp",
+      "source_title": "File:Dried angelica slices (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_angelica_slices_(2).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc010-danggui-detail-01-v1.webp",
+      "source_title": "File:Dried angelica slices (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_angelica_slices_(2).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc010-danggui-detail-02-v1.webp",
+      "source_title": "File:Dried angelica slices (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_angelica_slices_(2).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc010-danggui-detail-03-v1.webp",
+      "source_title": "File:Dried angelica slices (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_angelica_slices_(2).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc010-danggui-detail-04-v1.webp",
+      "source_title": "File:Dried angelica slices (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_angelica_slices_(2).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc010-danggui-detail-05-v1.webp",
+      "source_title": "File:Dried angelica slices (2).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_angelica_slices_(2).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc011": [
+    {
+      "role": "hero",
+      "filename": "bc011-huangqi-hero-v1.webp",
+      "source_title": "File:HK herbal 黃芪 dried Astragalus mongholicus slices October 2025 N13P 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_herbal_%E9%BB%83%E8%8A%AA_dried_Astragalus_mongholicus_slices_October_2025_N13P_01.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc011-huangqi-specimen-v1.webp",
+      "source_title": "File:HK herbal 黃芪 dried Astragalus mongholicus slices October 2025 N13P 02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_herbal_%E9%BB%83%E8%8A%AA_dried_Astragalus_mongholicus_slices_October_2025_N13P_02.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc011-huangqi-detail-01-v1.webp",
+      "source_title": "File:HK herbal 黃芪 dried Astragalus mongholicus slices October 2025 N13P 03.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_herbal_%E9%BB%83%E8%8A%AA_dried_Astragalus_mongholicus_slices_October_2025_N13P_03.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc011-huangqi-detail-02-v1.webp",
+      "source_title": "File:HK herbal 黃芪 dried Astragalus mongholicus slices October 2025 N13P 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_herbal_%E9%BB%83%E8%8A%AA_dried_Astragalus_mongholicus_slices_October_2025_N13P_01.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc011-huangqi-detail-03-v1.webp",
+      "source_title": "File:HK herbal 黃芪 dried Astragalus mongholicus slices October 2025 N13P 02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_herbal_%E9%BB%83%E8%8A%AA_dried_Astragalus_mongholicus_slices_October_2025_N13P_02.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc011-huangqi-detail-04-v1.webp",
+      "source_title": "File:HK herbal 黃芪 dried Astragalus mongholicus slices October 2025 N13P 03.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_herbal_%E9%BB%83%E8%8A%AA_dried_Astragalus_mongholicus_slices_October_2025_N13P_03.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc011-huangqi-detail-05-v1.webp",
+      "source_title": "File:HK herbal 黃芪 dried Astragalus mongholicus slices October 2025 N13P 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_herbal_%E9%BB%83%E8%8A%AA_dried_Astragalus_mongholicus_slices_October_2025_N13P_01.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc012": [
+    {
+      "role": "hero",
+      "filename": "bc012-fuling-hero-v1.webp",
+      "source_title": "File:Tuckahoe.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tuckahoe.jpg",
+      "author": "Trappem at English Wikipedia",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "specimen",
+      "filename": "bc012-fuling-specimen-v1.webp",
+      "source_title": "File:Wolfiporia extensa cube.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wolfiporia_extensa_cube.jpg",
+      "author": "François Nguyen",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc012-fuling-detail-01-v1.webp",
+      "source_title": "File:HK 中藥材 herb 土茯苓 Wolfiporia extensa December 2020 SS2 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_%E4%B8%AD%E8%97%A5%E6%9D%90_herb_%E5%9C%9F%E8%8C%AF%E8%8B%93_Wolfiporia_extensa_December_2020_SS2_01.jpg",
+      "author": "Pangou Zheam 783",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc012-fuling-detail-02-v1.webp",
+      "source_title": "File:Tuckahoe.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tuckahoe.jpg",
+      "author": "Trappem at English Wikipedia",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc012-fuling-detail-03-v1.webp",
+      "source_title": "File:Wolfiporia extensa cube.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Wolfiporia_extensa_cube.jpg",
+      "author": "François Nguyen",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc012-fuling-detail-04-v1.webp",
+      "source_title": "File:HK 中藥材 herb 土茯苓 Wolfiporia extensa December 2020 SS2 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_%E4%B8%AD%E8%97%A5%E6%9D%90_herb_%E5%9C%9F%E8%8C%AF%E8%8B%93_Wolfiporia_extensa_December_2020_SS2_01.jpg",
+      "author": "Pangou Zheam 783",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc012-fuling-detail-05-v1.webp",
+      "source_title": "File:Tuckahoe.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tuckahoe.jpg",
+      "author": "Trappem at English Wikipedia",
+      "license": "Public domain",
+      "license_url": ""
+    }
+  ],
+  "bc013": [
+    {
+      "role": "hero",
+      "filename": "bc013-yiyiren-hero-v1.webp",
+      "source_title": "File:Coix lacryma-jobi MHNT.BOT.2016.12.1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coix_lacryma-jobi_MHNT.BOT.2016.12.1.jpg",
+      "author": "Roger Culos",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc013-yiyiren-specimen-v1.webp",
+      "source_title": "File:Seeds of Coix lacryma-jobi.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Seeds_of_Coix_lacryma-jobi.jpg",
+      "author": "Lionel Allorge",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc013-yiyiren-detail-01-v1.webp",
+      "source_title": "File:Coix lacryma-jobi.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coix_lacryma-jobi.jpg",
+      "author": "Craigallan.za",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc013-yiyiren-detail-02-v1.webp",
+      "source_title": "File:Coix lacryma-jobi MHNT.BOT.2016.12.1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coix_lacryma-jobi_MHNT.BOT.2016.12.1.jpg",
+      "author": "Roger Culos",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc013-yiyiren-detail-03-v1.webp",
+      "source_title": "File:Seeds of Coix lacryma-jobi.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Seeds_of_Coix_lacryma-jobi.jpg",
+      "author": "Lionel Allorge",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc013-yiyiren-detail-04-v1.webp",
+      "source_title": "File:Coix lacryma-jobi.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coix_lacryma-jobi.jpg",
+      "author": "Craigallan.za",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc013-yiyiren-detail-05-v1.webp",
+      "source_title": "File:Coix lacryma-jobi MHNT.BOT.2016.12.1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coix_lacryma-jobi_MHNT.BOT.2016.12.1.jpg",
+      "author": "Roger Culos",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "bc014": [
+    {
+      "role": "hero",
+      "filename": "bc014-lianzi-hero-v1.webp",
+      "source_title": "File:Dried red lotus seeds (20240910).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_red_lotus_seeds_(20240910).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc014-lianzi-specimen-v1.webp",
+      "source_title": "File:Dried red lotus seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_red_lotus_seeds.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc014-lianzi-detail-01-v1.webp",
+      "source_title": "File:Semena lotosu indického.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Semena_lotosu_indick%C3%A9ho.jpg",
+      "author": "Topi Pigula",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc014-lianzi-detail-02-v1.webp",
+      "source_title": "File:Dried red lotus seeds (20240910).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_red_lotus_seeds_(20240910).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc014-lianzi-detail-03-v1.webp",
+      "source_title": "File:Dried red lotus seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_red_lotus_seeds.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc014-lianzi-detail-04-v1.webp",
+      "source_title": "File:Semena lotosu indického.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Semena_lotosu_indick%C3%A9ho.jpg",
+      "author": "Topi Pigula",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc014-lianzi-detail-05-v1.webp",
+      "source_title": "File:Dried red lotus seeds (20240910).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_red_lotus_seeds_(20240910).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc015": [
+    {
+      "role": "hero",
+      "filename": "bc015-juemingzi-hero-v1.webp",
+      "source_title": "File:தகரை2.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E0%AE%A4%E0%AE%95%E0%AE%B0%E0%AF%882.jpg",
+      "author": "Dr.S.Soundarapandian S.Soundarapandian ( talk ) 09:57, 30 November 2013 (UTC)",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "specimen",
+      "filename": "bc015-juemingzi-specimen-v1.webp",
+      "source_title": "File:Cassia seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cassia_seeds.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc015-juemingzi-detail-01-v1.webp",
+      "source_title": "File:தகரை3.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E0%AE%A4%E0%AE%95%E0%AE%B0%E0%AF%883.jpg",
+      "author": "Dr.S.Soundarapandian S.Soundarapandian ( talk ) 10:16, 30 November 2013 (UTC)",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc015-juemingzi-detail-02-v1.webp",
+      "source_title": "File:தகரை2.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E0%AE%A4%E0%AE%95%E0%AE%B0%E0%AF%882.jpg",
+      "author": "Dr.S.Soundarapandian S.Soundarapandian ( talk ) 09:57, 30 November 2013 (UTC)",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc015-juemingzi-detail-03-v1.webp",
+      "source_title": "File:Cassia seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cassia_seeds.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc015-juemingzi-detail-04-v1.webp",
+      "source_title": "File:தகரை3.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E0%AE%A4%E0%AE%95%E0%AE%B0%E0%AF%883.jpg",
+      "author": "Dr.S.Soundarapandian S.Soundarapandian ( talk ) 10:16, 30 November 2013 (UTC)",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc015-juemingzi-detail-05-v1.webp",
+      "source_title": "File:தகரை2.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E0%AE%A4%E0%AE%95%E0%AE%B0%E0%AF%882.jpg",
+      "author": "Dr.S.Soundarapandian S.Soundarapandian ( talk ) 09:57, 30 November 2013 (UTC)",
+      "license": "Public domain",
+      "license_url": ""
+    }
+  ],
+  "bc016": [
+    {
+      "role": "hero",
+      "filename": "bc016-dazao-hero-v1.webp",
+      "source_title": "File:Ziziphus zizyphus MHNT.BOT.2012.10.26.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ziziphus_zizyphus_MHNT.BOT.2012.10.26.jpg",
+      "author": "Roger Culos",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc016-dazao-specimen-v1.webp",
+      "source_title": "File:Jujube cross section.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jujube_cross_section.jpg",
+      "author": "SilverBullet X",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc016-dazao-detail-01-v1.webp",
+      "source_title": "File:Basket of Ziziphus jujuba (fruit) 20170115.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Basket_of_Ziziphus_jujuba_(fruit)_20170115.jpg",
+      "author": "Abhijitgogoi22",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc016-dazao-detail-02-v1.webp",
+      "source_title": "File:Ziziphus zizyphus MHNT.BOT.2012.10.26.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ziziphus_zizyphus_MHNT.BOT.2012.10.26.jpg",
+      "author": "Roger Culos",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc016-dazao-detail-03-v1.webp",
+      "source_title": "File:Jujube cross section.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jujube_cross_section.jpg",
+      "author": "SilverBullet X",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc016-dazao-detail-04-v1.webp",
+      "source_title": "File:Basket of Ziziphus jujuba (fruit) 20170115.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Basket_of_Ziziphus_jujuba_(fruit)_20170115.jpg",
+      "author": "Abhijitgogoi22",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc016-dazao-detail-05-v1.webp",
+      "source_title": "File:Ziziphus zizyphus MHNT.BOT.2012.10.26.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ziziphus_zizyphus_MHNT.BOT.2012.10.26.jpg",
+      "author": "Roger Culos",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  ],
+  "bc017": [
+    {
+      "role": "hero",
+      "filename": "bc017-renshen-hero-v1.webp",
+      "source_title": "File:Insam (ginseng).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Insam_(ginseng).jpg",
+      "author": "국립국어원",
+      "license": "CC BY-SA 2.0 kr",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc017-renshen-specimen-v1.webp",
+      "source_title": "File:Jilin Mt. Changbai panax ginseng slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jilin_Mt._Changbai_panax_ginseng_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc017-renshen-detail-01-v1.webp",
+      "source_title": "File:Bangeo-hoe 4.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bangeo-hoe_4.jpg",
+      "author": "대경라이프",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc017-renshen-detail-02-v1.webp",
+      "source_title": "File:Insam (ginseng).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Insam_(ginseng).jpg",
+      "author": "국립국어원",
+      "license": "CC BY-SA 2.0 kr",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc017-renshen-detail-03-v1.webp",
+      "source_title": "File:Jilin Mt. Changbai panax ginseng slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jilin_Mt._Changbai_panax_ginseng_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc017-renshen-detail-04-v1.webp",
+      "source_title": "File:Bangeo-hoe 4.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bangeo-hoe_4.jpg",
+      "author": "대경라이프",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc017-renshen-detail-05-v1.webp",
+      "source_title": "File:Insam (ginseng).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Insam_(ginseng).jpg",
+      "author": "국립국어원",
+      "license": "CC BY-SA 2.0 kr",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/deed.en"
+    }
+  ],
+  "bc018": [
+    {
+      "role": "hero",
+      "filename": "bc018-danshen-hero-v1.webp",
+      "source_title": "File:HK sliced herbal 丹参 Salvia miltiorrhiza root October 2025 N13P 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_sliced_herbal_%E4%B8%B9%E5%8F%82_Salvia_miltiorrhiza_root_October_2025_N13P_01.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc018-danshen-specimen-v1.webp",
+      "source_title": "File:HK sliced herbal 丹参 Salvia miltiorrhiza root October 2025 N13P 02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_sliced_herbal_%E4%B8%B9%E5%8F%82_Salvia_miltiorrhiza_root_October_2025_N13P_02.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc018-danshen-detail-01-v1.webp",
+      "source_title": "File:HK sliced herbal 丹参 Salvia miltiorrhiza root October 2025 N13P 03.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_sliced_herbal_%E4%B8%B9%E5%8F%82_Salvia_miltiorrhiza_root_October_2025_N13P_03.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc018-danshen-detail-02-v1.webp",
+      "source_title": "File:HK sliced herbal 丹参 Salvia miltiorrhiza root October 2025 N13P 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_sliced_herbal_%E4%B8%B9%E5%8F%82_Salvia_miltiorrhiza_root_October_2025_N13P_01.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc018-danshen-detail-03-v1.webp",
+      "source_title": "File:HK sliced herbal 丹参 Salvia miltiorrhiza root October 2025 N13P 02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_sliced_herbal_%E4%B8%B9%E5%8F%82_Salvia_miltiorrhiza_root_October_2025_N13P_02.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc018-danshen-detail-04-v1.webp",
+      "source_title": "File:HK sliced herbal 丹参 Salvia miltiorrhiza root October 2025 N13P 03.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_sliced_herbal_%E4%B8%B9%E5%8F%82_Salvia_miltiorrhiza_root_October_2025_N13P_03.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc018-danshen-detail-05-v1.webp",
+      "source_title": "File:HK sliced herbal 丹参 Salvia miltiorrhiza root October 2025 N13P 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:HK_sliced_herbal_%E4%B8%B9%E5%8F%82_Salvia_miltiorrhiza_root_October_2025_N13P_01.jpg",
+      "author": "SZE XAIMMOOA HONGMIN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc019": [
+    {
+      "role": "hero",
+      "filename": "bc019-lianqiao-hero-v1.webp",
+      "source_title": "File:Forsythia suspensa Nymans (20102047091).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Forsythia_suspensa_Nymans_(20102047091).jpg",
+      "author": "peganum from Small Dole, England",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc019-lianqiao-specimen-v1.webp",
+      "source_title": "File:Forsythia suspensa Nymans (20102047091).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Forsythia_suspensa_Nymans_(20102047091).jpg",
+      "author": "peganum from Small Dole, England",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc019-lianqiao-detail-01-v1.webp",
+      "source_title": "File:Forsythia suspensa Nymans (20102047091).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Forsythia_suspensa_Nymans_(20102047091).jpg",
+      "author": "peganum from Small Dole, England",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc019-lianqiao-detail-02-v1.webp",
+      "source_title": "File:Forsythia suspensa Nymans (20102047091).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Forsythia_suspensa_Nymans_(20102047091).jpg",
+      "author": "peganum from Small Dole, England",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc019-lianqiao-detail-03-v1.webp",
+      "source_title": "File:Forsythia suspensa Nymans (20102047091).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Forsythia_suspensa_Nymans_(20102047091).jpg",
+      "author": "peganum from Small Dole, England",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc019-lianqiao-detail-04-v1.webp",
+      "source_title": "File:Forsythia suspensa Nymans (20102047091).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Forsythia_suspensa_Nymans_(20102047091).jpg",
+      "author": "peganum from Small Dole, England",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc019-lianqiao-detail-05-v1.webp",
+      "source_title": "File:Forsythia suspensa Nymans (20102047091).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Forsythia_suspensa_Nymans_(20102047091).jpg",
+      "author": "peganum from Small Dole, England",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  ],
+  "bc020": [
+    {
+      "role": "hero",
+      "filename": "bc020-maidong-hero-v1.webp",
+      "source_title": "File:Dried Ophiopogon japonicus sticks.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_Ophiopogon_japonicus_sticks.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc020-maidong-specimen-v1.webp",
+      "source_title": "File:Dried ophiopogon japonicus.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_ophiopogon_japonicus.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc020-maidong-detail-01-v1.webp",
+      "source_title": "File:Dried Ophiopogon japonicus sticks.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_Ophiopogon_japonicus_sticks.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc020-maidong-detail-02-v1.webp",
+      "source_title": "File:Dried ophiopogon japonicus.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_ophiopogon_japonicus.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc020-maidong-detail-03-v1.webp",
+      "source_title": "File:Dried Ophiopogon japonicus sticks.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_Ophiopogon_japonicus_sticks.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc020-maidong-detail-04-v1.webp",
+      "source_title": "File:Dried ophiopogon japonicus.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_ophiopogon_japonicus.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc020-maidong-detail-05-v1.webp",
+      "source_title": "File:Dried Ophiopogon japonicus sticks.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_Ophiopogon_japonicus_sticks.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc021": [
+    {
+      "role": "hero",
+      "filename": "bc021-wuweizi-hero-v1.webp",
+      "source_title": "File:Jilin Mt. Changbai omija berries.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jilin_Mt._Changbai_omija_berries.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc021-wuweizi-specimen-v1.webp",
+      "source_title": "File:Schisandra chinensis berries&seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Schisandra_chinensis_berries%26seeds.jpg",
+      "author": "Vladimir Kosolapov",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc021-wuweizi-detail-01-v1.webp",
+      "source_title": "File:Omija.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Omija.jpg",
+      "author": "ally j",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc021-wuweizi-detail-02-v1.webp",
+      "source_title": "File:Jilin Mt. Changbai omija berries.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jilin_Mt._Changbai_omija_berries.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc021-wuweizi-detail-03-v1.webp",
+      "source_title": "File:Schisandra chinensis berries&seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Schisandra_chinensis_berries%26seeds.jpg",
+      "author": "Vladimir Kosolapov",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc021-wuweizi-detail-04-v1.webp",
+      "source_title": "File:Omija.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Omija.jpg",
+      "author": "ally j",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc021-wuweizi-detail-05-v1.webp",
+      "source_title": "File:Jilin Mt. Changbai omija berries.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jilin_Mt._Changbai_omija_berries.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc022": [
+    {
+      "role": "hero",
+      "filename": "bc022-baihe-hero-v1.webp",
+      "source_title": "File:Lilium lancifolium bulbils.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lilium_lancifolium_bulbils.jpg",
+      "author": "Nadiatalent",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "specimen",
+      "filename": "bc022-baihe-specimen-v1.webp",
+      "source_title": "File:Lilium lancifolium 001.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lilium_lancifolium_001.JPG",
+      "author": "H. Zell",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc022-baihe-detail-01-v1.webp",
+      "source_title": "File:Lily rhizome (1).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lily_rhizome_(1).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc022-baihe-detail-02-v1.webp",
+      "source_title": "File:Lilium lancifolium bulbils.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lilium_lancifolium_bulbils.jpg",
+      "author": "Nadiatalent",
+      "license": "Public domain",
+      "license_url": ""
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc022-baihe-detail-03-v1.webp",
+      "source_title": "File:Lilium lancifolium 001.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lilium_lancifolium_001.JPG",
+      "author": "H. Zell",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc022-baihe-detail-04-v1.webp",
+      "source_title": "File:Lily rhizome (1).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lily_rhizome_(1).jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc022-baihe-detail-05-v1.webp",
+      "source_title": "File:Lilium lancifolium bulbils.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lilium_lancifolium_bulbils.jpg",
+      "author": "Nadiatalent",
+      "license": "Public domain",
+      "license_url": ""
+    }
+  ],
+  "bc023": [
+    {
+      "role": "hero",
+      "filename": "bc023-rougui-hero-v1.webp",
+      "source_title": "File:Cassia bark stripped away - spice plantation, outside Stone Town, Zanzibar, Tanzania (8868687649).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cassia_bark_stripped_away_-_spice_plantation,_outside_Stone_Town,_Zanzibar,_Tanzania_(8868687649).jpg",
+      "author": "Adam Jones from Kelowna, BC, Canada",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc023-rougui-specimen-v1.webp",
+      "source_title": "File:Cassia bark, Nepal 1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cassia_bark,_Nepal_1.jpg",
+      "author": "Gaurav Dhwaj Khadka",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc023-rougui-detail-01-v1.webp",
+      "source_title": "File:Cinnamon (দারচিনি).JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cinnamon_(%E0%A6%A6%E0%A6%BE%E0%A6%B0%E0%A6%9A%E0%A6%BF%E0%A6%A8%E0%A6%BF).JPG",
+      "author": "Atudu",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc023-rougui-detail-02-v1.webp",
+      "source_title": "File:Cassia bark stripped away - spice plantation, outside Stone Town, Zanzibar, Tanzania (8868687649).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cassia_bark_stripped_away_-_spice_plantation,_outside_Stone_Town,_Zanzibar,_Tanzania_(8868687649).jpg",
+      "author": "Adam Jones from Kelowna, BC, Canada",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc023-rougui-detail-03-v1.webp",
+      "source_title": "File:Cassia bark, Nepal 1.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cassia_bark,_Nepal_1.jpg",
+      "author": "Gaurav Dhwaj Khadka",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc023-rougui-detail-04-v1.webp",
+      "source_title": "File:Cinnamon (দারচিনি).JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cinnamon_(%E0%A6%A6%E0%A6%BE%E0%A6%B0%E0%A6%9A%E0%A6%BF%E0%A6%A8%E0%A6%BF).JPG",
+      "author": "Atudu",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc023-rougui-detail-05-v1.webp",
+      "source_title": "File:Cassia bark stripped away - spice plantation, outside Stone Town, Zanzibar, Tanzania (8868687649).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cassia_bark_stripped_away_-_spice_plantation,_outside_Stone_Town,_Zanzibar,_Tanzania_(8868687649).jpg",
+      "author": "Adam Jones from Kelowna, BC, Canada",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  ],
+  "bc024": [
+    {
+      "role": "hero",
+      "filename": "bc024-dingxiang-hero-v1.webp",
+      "source_title": "File:Cariophylli flos - Myrtaceae 245049.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cariophylli_flos_-_Myrtaceae_245049.jpg",
+      "author": "Rillke",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc024-dingxiang-specimen-v1.webp",
+      "source_title": "File:Cariophylli flos - Myrtaceae 298051.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cariophylli_flos_-_Myrtaceae_298051.jpg",
+      "author": "Rillke",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc024-dingxiang-detail-01-v1.webp",
+      "source_title": "File:Cengkeh Kering (r-1-009).webp",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cengkeh_Kering_(r-1-009).webp",
+      "author": "Ekspos.IDN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc024-dingxiang-detail-02-v1.webp",
+      "source_title": "File:Cariophylli flos - Myrtaceae 245049.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cariophylli_flos_-_Myrtaceae_245049.jpg",
+      "author": "Rillke",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc024-dingxiang-detail-03-v1.webp",
+      "source_title": "File:Cariophylli flos - Myrtaceae 298051.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cariophylli_flos_-_Myrtaceae_298051.jpg",
+      "author": "Rillke",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc024-dingxiang-detail-04-v1.webp",
+      "source_title": "File:Cengkeh Kering (r-1-009).webp",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cengkeh_Kering_(r-1-009).webp",
+      "author": "Ekspos.IDN",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc024-dingxiang-detail-05-v1.webp",
+      "source_title": "File:Cariophylli flos - Myrtaceae 245049.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Cariophylli_flos_-_Myrtaceae_245049.jpg",
+      "author": "Rillke",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+    }
+  ],
+  "bc025": [
+    {
+      "role": "hero",
+      "filename": "bc025-sharen-hero-v1.webp",
+      "source_title": "File:Dried amomum villosum.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_amomum_villosum.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc025-sharen-specimen-v1.webp",
+      "source_title": "File:Sa nhân (Amomum villosum).JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sa_nh%C3%A2n_(Amomum_villosum).JPG",
+      "author": "Hungda",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc025-sharen-detail-01-v1.webp",
+      "source_title": "File:Dried amomum villosum.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_amomum_villosum.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc025-sharen-detail-02-v1.webp",
+      "source_title": "File:Sa nhân (Amomum villosum).JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sa_nh%C3%A2n_(Amomum_villosum).JPG",
+      "author": "Hungda",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc025-sharen-detail-03-v1.webp",
+      "source_title": "File:Dried amomum villosum.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_amomum_villosum.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc025-sharen-detail-04-v1.webp",
+      "source_title": "File:Sa nhân (Amomum villosum).JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sa_nh%C3%A2n_(Amomum_villosum).JPG",
+      "author": "Hungda",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc025-sharen-detail-05-v1.webp",
+      "source_title": "File:Dried amomum villosum.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_amomum_villosum.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc026": [
+    {
+      "role": "hero",
+      "filename": "bc026-houpo-hero-v1.webp",
+      "source_title": "File:Magnolia officinalis habit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Magnolia_officinalis_habit.jpg",
+      "author": "Bruce Marlin",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc026-houpo-specimen-v1.webp",
+      "source_title": "File:Magnolia officinalis habit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Magnolia_officinalis_habit.jpg",
+      "author": "Bruce Marlin",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc026-houpo-detail-01-v1.webp",
+      "source_title": "File:Magnolia officinalis habit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Magnolia_officinalis_habit.jpg",
+      "author": "Bruce Marlin",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc026-houpo-detail-02-v1.webp",
+      "source_title": "File:Magnolia officinalis habit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Magnolia_officinalis_habit.jpg",
+      "author": "Bruce Marlin",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc026-houpo-detail-03-v1.webp",
+      "source_title": "File:Magnolia officinalis habit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Magnolia_officinalis_habit.jpg",
+      "author": "Bruce Marlin",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc026-houpo-detail-04-v1.webp",
+      "source_title": "File:Magnolia officinalis habit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Magnolia_officinalis_habit.jpg",
+      "author": "Bruce Marlin",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc026-houpo-detail-05-v1.webp",
+      "source_title": "File:Magnolia officinalis habit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Magnolia_officinalis_habit.jpg",
+      "author": "Bruce Marlin",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  ],
+  "bc027": [
+    {
+      "role": "hero",
+      "filename": "bc027-huanglian-hero-v1.webp",
+      "source_title": "File:Coptis japonica、5026696、黄蓮・丹波市立薬草薬樹公園.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coptis_japonica%E3%80%815026696%E3%80%81%E9%BB%84%E8%93%AE%E3%83%BB%E4%B8%B9%E6%B3%A2%E5%B8%82%E7%AB%8B%E8%96%AC%E8%8D%89%E8%96%AC%E6%A8%B9%E5%85%AC%E5%9C%92.JPG",
+      "author": "松岡明芳",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc027-huanglian-specimen-v1.webp",
+      "source_title": "File:Coptis japonica、5026696、黄蓮・丹波市立薬草薬樹公園.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coptis_japonica%E3%80%815026696%E3%80%81%E9%BB%84%E8%93%AE%E3%83%BB%E4%B8%B9%E6%B3%A2%E5%B8%82%E7%AB%8B%E8%96%AC%E8%8D%89%E8%96%AC%E6%A8%B9%E5%85%AC%E5%9C%92.JPG",
+      "author": "松岡明芳",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc027-huanglian-detail-01-v1.webp",
+      "source_title": "File:Coptis japonica、5026696、黄蓮・丹波市立薬草薬樹公園.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coptis_japonica%E3%80%815026696%E3%80%81%E9%BB%84%E8%93%AE%E3%83%BB%E4%B8%B9%E6%B3%A2%E5%B8%82%E7%AB%8B%E8%96%AC%E8%8D%89%E8%96%AC%E6%A8%B9%E5%85%AC%E5%9C%92.JPG",
+      "author": "松岡明芳",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc027-huanglian-detail-02-v1.webp",
+      "source_title": "File:Coptis japonica、5026696、黄蓮・丹波市立薬草薬樹公園.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coptis_japonica%E3%80%815026696%E3%80%81%E9%BB%84%E8%93%AE%E3%83%BB%E4%B8%B9%E6%B3%A2%E5%B8%82%E7%AB%8B%E8%96%AC%E8%8D%89%E8%96%AC%E6%A8%B9%E5%85%AC%E5%9C%92.JPG",
+      "author": "松岡明芳",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc027-huanglian-detail-03-v1.webp",
+      "source_title": "File:Coptis japonica、5026696、黄蓮・丹波市立薬草薬樹公園.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coptis_japonica%E3%80%815026696%E3%80%81%E9%BB%84%E8%93%AE%E3%83%BB%E4%B8%B9%E6%B3%A2%E5%B8%82%E7%AB%8B%E8%96%AC%E8%8D%89%E8%96%AC%E6%A8%B9%E5%85%AC%E5%9C%92.JPG",
+      "author": "松岡明芳",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc027-huanglian-detail-04-v1.webp",
+      "source_title": "File:Coptis japonica、5026696、黄蓮・丹波市立薬草薬樹公園.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coptis_japonica%E3%80%815026696%E3%80%81%E9%BB%84%E8%93%AE%E3%83%BB%E4%B8%B9%E6%B3%A2%E5%B8%82%E7%AB%8B%E8%96%AC%E8%8D%89%E8%96%AC%E6%A8%B9%E5%85%AC%E5%9C%92.JPG",
+      "author": "松岡明芳",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc027-huanglian-detail-05-v1.webp",
+      "source_title": "File:Coptis japonica、5026696、黄蓮・丹波市立薬草薬樹公園.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Coptis_japonica%E3%80%815026696%E3%80%81%E9%BB%84%E8%93%AE%E3%83%BB%E4%B8%B9%E6%B3%A2%E5%B8%82%E7%AB%8B%E8%96%AC%E8%8D%89%E8%96%AC%E6%A8%B9%E5%85%AC%E5%9C%92.JPG",
+      "author": "松岡明芳",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  ],
+  "bc028": [
+    {
+      "role": "hero",
+      "filename": "bc028-huangqin-hero-v1.webp",
+      "source_title": "File:Tarczyca bajkalska.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tarczyca_bajkalska.jpg",
+      "author": "Natalia TC",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc028-huangqin-specimen-v1.webp",
+      "source_title": "File:Scutellaria baicalensis kz02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Scutellaria_baicalensis_kz02.jpg",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc028-huangqin-detail-01-v1.webp",
+      "source_title": "File:Scutellaria baicalensis kz04.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Scutellaria_baicalensis_kz04.jpg",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc028-huangqin-detail-02-v1.webp",
+      "source_title": "File:Tarczyca bajkalska.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tarczyca_bajkalska.jpg",
+      "author": "Natalia TC",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc028-huangqin-detail-03-v1.webp",
+      "source_title": "File:Scutellaria baicalensis kz02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Scutellaria_baicalensis_kz02.jpg",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc028-huangqin-detail-04-v1.webp",
+      "source_title": "File:Scutellaria baicalensis kz04.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Scutellaria_baicalensis_kz04.jpg",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc028-huangqin-detail-05-v1.webp",
+      "source_title": "File:Tarczyca bajkalska.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tarczyca_bajkalska.jpg",
+      "author": "Natalia TC",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "bc029": [
+    {
+      "role": "hero",
+      "filename": "bc029-zexie-hero-v1.webp",
+      "source_title": "File:Alisma plantago-aquatica & green eggs20140606 10.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alisma_plantago-aquatica_%26_green_eggs20140606_10.jpg",
+      "author": "Bff",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc029-zexie-specimen-v1.webp",
+      "source_title": "File:Alisma plantago-aquatica kz02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alisma_plantago-aquatica_kz02.jpg",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc029-zexie-detail-01-v1.webp",
+      "source_title": "File:Alisma plantago-aquatica kz01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alisma_plantago-aquatica_kz01.jpg",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc029-zexie-detail-02-v1.webp",
+      "source_title": "File:Alisma plantago-aquatica & green eggs20140606 10.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alisma_plantago-aquatica_%26_green_eggs20140606_10.jpg",
+      "author": "Bff",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc029-zexie-detail-03-v1.webp",
+      "source_title": "File:Alisma plantago-aquatica kz02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alisma_plantago-aquatica_kz02.jpg",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc029-zexie-detail-04-v1.webp",
+      "source_title": "File:Alisma plantago-aquatica kz01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alisma_plantago-aquatica_kz01.jpg",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc029-zexie-detail-05-v1.webp",
+      "source_title": "File:Alisma plantago-aquatica & green eggs20140606 10.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Alisma_plantago-aquatica_%26_green_eggs20140606_10.jpg",
+      "author": "Bff",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "bc030": [
+    {
+      "role": "hero",
+      "filename": "bc030-banxia-hero-v1.webp",
+      "source_title": "File:Pinellia ternata bulbil.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pinellia_ternata_bulbil.jpg",
+      "author": "Enzo^",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc030-banxia-specimen-v1.webp",
+      "source_title": "File:Pinellia ternata bulbil.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pinellia_ternata_bulbil.jpg",
+      "author": "Enzo^",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc030-banxia-detail-01-v1.webp",
+      "source_title": "File:Pinellia ternata bulbil.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pinellia_ternata_bulbil.jpg",
+      "author": "Enzo^",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc030-banxia-detail-02-v1.webp",
+      "source_title": "File:Pinellia ternata bulbil.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pinellia_ternata_bulbil.jpg",
+      "author": "Enzo^",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc030-banxia-detail-03-v1.webp",
+      "source_title": "File:Pinellia ternata bulbil.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pinellia_ternata_bulbil.jpg",
+      "author": "Enzo^",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc030-banxia-detail-04-v1.webp",
+      "source_title": "File:Pinellia ternata bulbil.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pinellia_ternata_bulbil.jpg",
+      "author": "Enzo^",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc030-banxia-detail-05-v1.webp",
+      "source_title": "File:Pinellia ternata bulbil.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pinellia_ternata_bulbil.jpg",
+      "author": "Enzo^",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "bc031": [
+    {
+      "role": "hero",
+      "filename": "bc031-tianma-hero-v1.webp",
+      "source_title": "File:Gastrodia elata slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gastrodia_elata_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc031-tianma-specimen-v1.webp",
+      "source_title": "File:6月19日 天麻山藥煲雞，還加了花生蜜棗紅棗枸杞和紅腰豆.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:6%E6%9C%8819%E6%97%A5_%E5%A4%A9%E9%BA%BB%E5%B1%B1%E8%97%A5%E7%85%B2%E9%9B%9E%EF%BC%8C%E9%82%84%E5%8A%A0%E4%BA%86%E8%8A%B1%E7%94%9F%E8%9C%9C%E6%A3%97%E7%B4%85%E6%A3%97%E6%9E%B8%E6%9D%9E%E5%92%8C%E7%B4%85%E8%85%B0%E8%B1%86.jpg",
+      "author": "Singzy",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc031-tianma-detail-01-v1.webp",
+      "source_title": "File:Gastrodia elata slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gastrodia_elata_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc031-tianma-detail-02-v1.webp",
+      "source_title": "File:6月19日 天麻山藥煲雞，還加了花生蜜棗紅棗枸杞和紅腰豆.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:6%E6%9C%8819%E6%97%A5_%E5%A4%A9%E9%BA%BB%E5%B1%B1%E8%97%A5%E7%85%B2%E9%9B%9E%EF%BC%8C%E9%82%84%E5%8A%A0%E4%BA%86%E8%8A%B1%E7%94%9F%E8%9C%9C%E6%A3%97%E7%B4%85%E6%A3%97%E6%9E%B8%E6%9D%9E%E5%92%8C%E7%B4%85%E8%85%B0%E8%B1%86.jpg",
+      "author": "Singzy",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc031-tianma-detail-03-v1.webp",
+      "source_title": "File:Gastrodia elata slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gastrodia_elata_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc031-tianma-detail-04-v1.webp",
+      "source_title": "File:6月19日 天麻山藥煲雞，還加了花生蜜棗紅棗枸杞和紅腰豆.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:6%E6%9C%8819%E6%97%A5_%E5%A4%A9%E9%BA%BB%E5%B1%B1%E8%97%A5%E7%85%B2%E9%9B%9E%EF%BC%8C%E9%82%84%E5%8A%A0%E4%BA%86%E8%8A%B1%E7%94%9F%E8%9C%9C%E6%A3%97%E7%B4%85%E6%A3%97%E6%9E%B8%E6%9D%9E%E5%92%8C%E7%B4%85%E8%85%B0%E8%B1%86.jpg",
+      "author": "Singzy",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc031-tianma-detail-05-v1.webp",
+      "source_title": "File:Gastrodia elata slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gastrodia_elata_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc032": [
+    {
+      "role": "hero",
+      "filename": "bc032-niuxi-hero-v1.webp",
+      "source_title": "File:Achyranthes bidentata? (31125927382).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Achyranthes_bidentata%3F_(31125927382).jpg",
+      "author": "Dinesh Valke from Thane, India",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc032-niuxi-specimen-v1.webp",
+      "source_title": "File:Achyranthes bidentata? (31233993976).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Achyranthes_bidentata%3F_(31233993976).jpg",
+      "author": "Dinesh Valke from Thane, India",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc032-niuxi-detail-01-v1.webp",
+      "source_title": "File:Achyranthes bidentata? (31270303955).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Achyranthes_bidentata%3F_(31270303955).jpg",
+      "author": "Dinesh Valke from Thane, India",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc032-niuxi-detail-02-v1.webp",
+      "source_title": "File:Achyranthes bidentata? (31125927382).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Achyranthes_bidentata%3F_(31125927382).jpg",
+      "author": "Dinesh Valke from Thane, India",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc032-niuxi-detail-03-v1.webp",
+      "source_title": "File:Achyranthes bidentata? (31233993976).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Achyranthes_bidentata%3F_(31233993976).jpg",
+      "author": "Dinesh Valke from Thane, India",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc032-niuxi-detail-04-v1.webp",
+      "source_title": "File:Achyranthes bidentata? (31270303955).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Achyranthes_bidentata%3F_(31270303955).jpg",
+      "author": "Dinesh Valke from Thane, India",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc032-niuxi-detail-05-v1.webp",
+      "source_title": "File:Achyranthes bidentata? (31125927382).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Achyranthes_bidentata%3F_(31125927382).jpg",
+      "author": "Dinesh Valke from Thane, India",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    }
+  ],
+  "bc033": [
+    {
+      "role": "hero",
+      "filename": "bc033-duzhong-hero-v1.webp",
+      "source_title": "File:Eucommia bark slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eucommia_bark_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc033-duzhong-specimen-v1.webp",
+      "source_title": "File:Eucommia ulmoides slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eucommia_ulmoides_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc033-duzhong-detail-01-v1.webp",
+      "source_title": "File:Eucommia ulmoides Eukomia wiązolistna 2019-09-15 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eucommia_ulmoides_Eukomia_wi%C4%85zolistna_2019-09-15_01.jpg",
+      "author": "Agnieszka Kwiecień, Nova",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc033-duzhong-detail-02-v1.webp",
+      "source_title": "File:Eucommia bark slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eucommia_bark_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc033-duzhong-detail-03-v1.webp",
+      "source_title": "File:Eucommia ulmoides slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eucommia_ulmoides_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc033-duzhong-detail-04-v1.webp",
+      "source_title": "File:Eucommia ulmoides Eukomia wiązolistna 2019-09-15 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eucommia_ulmoides_Eukomia_wi%C4%85zolistna_2019-09-15_01.jpg",
+      "author": "Agnieszka Kwiecień, Nova",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc033-duzhong-detail-05-v1.webp",
+      "source_title": "File:Eucommia bark slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eucommia_bark_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc034": [
+    {
+      "role": "hero",
+      "filename": "bc034-muxiang-hero-v1.webp",
+      "source_title": "File:Saussurea costus fresh dried roots with strong aroma.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saussurea_costus_fresh_dried_roots_with_strong_aroma.jpg",
+      "author": "Plantagenet",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc034-muxiang-specimen-v1.webp",
+      "source_title": "File:Saussurea costus fresh dry roots.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saussurea_costus_fresh_dry_roots.jpg",
+      "author": "Plantagenet",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc034-muxiang-detail-01-v1.webp",
+      "source_title": "File:Внешний вид семян костуса (кыст аль хинди), Saussurea costus.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD_%D0%BA%D0%BE%D1%81%D1%82%D1%83%D1%81%D0%B0_(%D0%BA%D1%8B%D1%81%D1%82_%D0%B0%D0%BB%D1%8C_%D1%85%D0%B8%D0%BD%D0%B4%D0%B8),_Saussurea_costus.jpg",
+      "author": "Plantagenet",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc034-muxiang-detail-02-v1.webp",
+      "source_title": "File:Saussurea costus fresh dried roots with strong aroma.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saussurea_costus_fresh_dried_roots_with_strong_aroma.jpg",
+      "author": "Plantagenet",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc034-muxiang-detail-03-v1.webp",
+      "source_title": "File:Saussurea costus fresh dry roots.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saussurea_costus_fresh_dry_roots.jpg",
+      "author": "Plantagenet",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc034-muxiang-detail-04-v1.webp",
+      "source_title": "File:Внешний вид семян костуса (кыст аль хинди), Saussurea costus.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%D0%92%D0%BD%D0%B5%D1%88%D0%BD%D0%B8%D0%B9_%D0%B2%D0%B8%D0%B4_%D1%81%D0%B5%D0%BC%D1%8F%D0%BD_%D0%BA%D0%BE%D1%81%D1%82%D1%83%D1%81%D0%B0_(%D0%BA%D1%8B%D1%81%D1%82_%D0%B0%D0%BB%D1%8C_%D1%85%D0%B8%D0%BD%D0%B4%D0%B8),_Saussurea_costus.jpg",
+      "author": "Plantagenet",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc034-muxiang-detail-05-v1.webp",
+      "source_title": "File:Saussurea costus fresh dried roots with strong aroma.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saussurea_costus_fresh_dried_roots_with_strong_aroma.jpg",
+      "author": "Plantagenet",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "bc035": [
+    {
+      "role": "hero",
+      "filename": "bc035-jixueteng-hero-v1.webp",
+      "source_title": "File:Spatholobus stem slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spatholobus_stem_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc035-jixueteng-specimen-v1.webp",
+      "source_title": "File:Spatholobus stem slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spatholobus_stem_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc035-jixueteng-detail-01-v1.webp",
+      "source_title": "File:Spatholobus stem slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spatholobus_stem_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc035-jixueteng-detail-02-v1.webp",
+      "source_title": "File:Spatholobus stem slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spatholobus_stem_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc035-jixueteng-detail-03-v1.webp",
+      "source_title": "File:Spatholobus stem slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spatholobus_stem_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc035-jixueteng-detail-04-v1.webp",
+      "source_title": "File:Spatholobus stem slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spatholobus_stem_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc035-jixueteng-detail-05-v1.webp",
+      "source_title": "File:Spatholobus stem slices.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Spatholobus_stem_slices.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc036": [
+    {
+      "role": "hero",
+      "filename": "bc036-sumu-hero-v1.webp",
+      "source_title": "File:Ceasalpinia sappan - Sappan Wood - കുചന്ദനം, പതിമുഖം, ചപ്പങ്ങം 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ceasalpinia_sappan_-_Sappan_Wood_-_%E0%B4%95%E0%B5%81%E0%B4%9A%E0%B4%A8%E0%B5%8D%E0%B4%A6%E0%B4%A8%E0%B4%82,_%E0%B4%AA%E0%B4%A4%E0%B4%BF%E0%B4%AE%E0%B5%81%E0%B4%96%E0%B4%82,_%E0%B4%9A%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B4%82_01.jpg",
+      "author": "Shijan Kaakkara",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc036-sumu-specimen-v1.webp",
+      "source_title": "File:Ceasalpinia sappan - Sappan Wood - കുചന്ദനം, പതിമുഖം, ചപ്പങ്ങം 02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ceasalpinia_sappan_-_Sappan_Wood_-_%E0%B4%95%E0%B5%81%E0%B4%9A%E0%B4%A8%E0%B5%8D%E0%B4%A6%E0%B4%A8%E0%B4%82,_%E0%B4%AA%E0%B4%A4%E0%B4%BF%E0%B4%AE%E0%B5%81%E0%B4%96%E0%B4%82,_%E0%B4%9A%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B4%82_02.jpg",
+      "author": "Shijan Kaakkara",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc036-sumu-detail-01-v1.webp",
+      "source_title": "File:Kayu Secang 2.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kayu_Secang_2.jpg",
+      "author": "Herusutimbul",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc036-sumu-detail-02-v1.webp",
+      "source_title": "File:Ceasalpinia sappan - Sappan Wood - കുചന്ദനം, പതിമുഖം, ചപ്പങ്ങം 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ceasalpinia_sappan_-_Sappan_Wood_-_%E0%B4%95%E0%B5%81%E0%B4%9A%E0%B4%A8%E0%B5%8D%E0%B4%A6%E0%B4%A8%E0%B4%82,_%E0%B4%AA%E0%B4%A4%E0%B4%BF%E0%B4%AE%E0%B5%81%E0%B4%96%E0%B4%82,_%E0%B4%9A%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B4%82_01.jpg",
+      "author": "Shijan Kaakkara",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc036-sumu-detail-03-v1.webp",
+      "source_title": "File:Ceasalpinia sappan - Sappan Wood - കുചന്ദനം, പതിമുഖം, ചപ്പങ്ങം 02.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ceasalpinia_sappan_-_Sappan_Wood_-_%E0%B4%95%E0%B5%81%E0%B4%9A%E0%B4%A8%E0%B5%8D%E0%B4%A6%E0%B4%A8%E0%B4%82,_%E0%B4%AA%E0%B4%A4%E0%B4%BF%E0%B4%AE%E0%B5%81%E0%B4%96%E0%B4%82,_%E0%B4%9A%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B4%82_02.jpg",
+      "author": "Shijan Kaakkara",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc036-sumu-detail-04-v1.webp",
+      "source_title": "File:Kayu Secang 2.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Kayu_Secang_2.jpg",
+      "author": "Herusutimbul",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc036-sumu-detail-05-v1.webp",
+      "source_title": "File:Ceasalpinia sappan - Sappan Wood - കുചന്ദനം, പതിമുഖം, ചപ്പങ്ങം 01.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ceasalpinia_sappan_-_Sappan_Wood_-_%E0%B4%95%E0%B5%81%E0%B4%9A%E0%B4%A8%E0%B5%8D%E0%B4%A6%E0%B4%A8%E0%B4%82,_%E0%B4%AA%E0%B4%A4%E0%B4%BF%E0%B4%AE%E0%B5%81%E0%B4%96%E0%B4%82,_%E0%B4%9A%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B4%82_01.jpg",
+      "author": "Shijan Kaakkara",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ],
+  "bc037": [
+    {
+      "role": "hero",
+      "filename": "bc037-zhizi-hero-v1.webp",
+      "source_title": "File:Dried gardenia seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_gardenia_seeds.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc037-zhizi-specimen-v1.webp",
+      "source_title": "File:Gardenia jasminoides fruit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gardenia_jasminoides_fruit.jpg",
+      "author": "Alpsdake",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc037-zhizi-detail-01-v1.webp",
+      "source_title": "File:コクチナシ(小梔子)(Gardenia jasminoides Ellis var. radicans Makino)-実02 (5844531141).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E3%82%B3%E3%82%AF%E3%83%81%E3%83%8A%E3%82%B7(%E5%B0%8F%E6%A2%94%E5%AD%90)(Gardenia_jasminoides_Ellis_var._radicans_Makino)-%E5%AE%9F02_(5844531141).jpg",
+      "author": "yamatsu",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc037-zhizi-detail-02-v1.webp",
+      "source_title": "File:Dried gardenia seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_gardenia_seeds.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc037-zhizi-detail-03-v1.webp",
+      "source_title": "File:Gardenia jasminoides fruit.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gardenia_jasminoides_fruit.jpg",
+      "author": "Alpsdake",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc037-zhizi-detail-04-v1.webp",
+      "source_title": "File:コクチナシ(小梔子)(Gardenia jasminoides Ellis var. radicans Makino)-実02 (5844531141).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%E3%82%B3%E3%82%AF%E3%83%81%E3%83%8A%E3%82%B7(%E5%B0%8F%E6%A2%94%E5%AD%90)(Gardenia_jasminoides_Ellis_var._radicans_Makino)-%E5%AE%9F02_(5844531141).jpg",
+      "author": "yamatsu",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc037-zhizi-detail-05-v1.webp",
+      "source_title": "File:Dried gardenia seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Dried_gardenia_seeds.jpg",
+      "author": "Fumikas Sagisavas",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    }
+  ],
+  "bc038": [
+    {
+      "role": "hero",
+      "filename": "bc038-zhishi-hero-v1.webp",
+      "source_title": "File:Citrus-aurantium-fruit.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Citrus-aurantium-fruit.JPG",
+      "author": "Sten Porse",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc038-zhishi-specimen-v1.webp",
+      "source_title": "File:Citrus × aurantium - fruits cut.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Citrus_%C3%97_aurantium_-_fruits_cut.jpg",
+      "author": "Genet ( Diskussion ). Original uploader was Genet at German Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc038-zhishi-detail-01-v1.webp",
+      "source_title": "File:Citrus aurantium.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Citrus_aurantium.jpg",
+      "author": "A. Barra",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc038-zhishi-detail-02-v1.webp",
+      "source_title": "File:Citrus-aurantium-fruit.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Citrus-aurantium-fruit.JPG",
+      "author": "Sten Porse",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc038-zhishi-detail-03-v1.webp",
+      "source_title": "File:Citrus × aurantium - fruits cut.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Citrus_%C3%97_aurantium_-_fruits_cut.jpg",
+      "author": "Genet ( Diskussion ). Original uploader was Genet at German Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc038-zhishi-detail-04-v1.webp",
+      "source_title": "File:Citrus aurantium.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Citrus_aurantium.jpg",
+      "author": "A. Barra",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc038-zhishi-detail-05-v1.webp",
+      "source_title": "File:Citrus-aurantium-fruit.JPG",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Citrus-aurantium-fruit.JPG",
+      "author": "Sten Porse",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  ],
+  "bc039": [
+    {
+      "role": "hero",
+      "filename": "bc039-foshou-hero-v1.webp",
+      "source_title": "File:20260317 Citrus medica var. sarcodactylis.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260317_Citrus_medica_var._sarcodactylis.jpg",
+      "author": "Flocci Nivis",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc039-foshou-specimen-v1.webp",
+      "source_title": "File:Starr-151228-3332-Citrus medica var sarcodactylus-ripe fruit-Hawea Pl Olinda-Maui (26259505686).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Starr-151228-3332-Citrus_medica_var_sarcodactylus-ripe_fruit-Hawea_Pl_Olinda-Maui_(26259505686).jpg",
+      "author": "Forest and Kim Starr",
+      "license": "CC BY 3.0 us",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc039-foshou-detail-01-v1.webp",
+      "source_title": "File:Starr-161031-0002-Citrus medica var sarcodactylus-fruit-Hawea Pl Olinda-Maui (31243024585).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Starr-161031-0002-Citrus_medica_var_sarcodactylus-fruit-Hawea_Pl_Olinda-Maui_(31243024585).jpg",
+      "author": "Forest and Kim Starr",
+      "license": "CC BY 3.0 us",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc039-foshou-detail-02-v1.webp",
+      "source_title": "File:20260317 Citrus medica var. sarcodactylis.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260317_Citrus_medica_var._sarcodactylis.jpg",
+      "author": "Flocci Nivis",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc039-foshou-detail-03-v1.webp",
+      "source_title": "File:Starr-151228-3332-Citrus medica var sarcodactylus-ripe fruit-Hawea Pl Olinda-Maui (26259505686).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Starr-151228-3332-Citrus_medica_var_sarcodactylus-ripe_fruit-Hawea_Pl_Olinda-Maui_(26259505686).jpg",
+      "author": "Forest and Kim Starr",
+      "license": "CC BY 3.0 us",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc039-foshou-detail-04-v1.webp",
+      "source_title": "File:Starr-161031-0002-Citrus medica var sarcodactylus-fruit-Hawea Pl Olinda-Maui (31243024585).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Starr-161031-0002-Citrus_medica_var_sarcodactylus-fruit-Hawea_Pl_Olinda-Maui_(31243024585).jpg",
+      "author": "Forest and Kim Starr",
+      "license": "CC BY 3.0 us",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc039-foshou-detail-05-v1.webp",
+      "source_title": "File:20260317 Citrus medica var. sarcodactylis.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:20260317_Citrus_medica_var._sarcodactylis.jpg",
+      "author": "Flocci Nivis",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    }
+  ],
+  "bc040": [
+    {
+      "role": "hero",
+      "filename": "bc040-wumei-hero-v1.webp",
+      "source_title": "File:Buai khem.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Buai_khem.jpg",
+      "author": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc040-wumei-specimen-v1.webp",
+      "source_title": "File:Pickledmai.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pickledmai.jpg",
+      "author": "Badagnani",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc040-wumei-detail-01-v1.webp",
+      "source_title": "File:Maesil (prunus mume) washed and stemmed.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Maesil_(prunus_mume)_washed_and_stemmed.jpg",
+      "author": "딸기맘양갱이",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc040-wumei-detail-02-v1.webp",
+      "source_title": "File:Buai khem.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Buai_khem.jpg",
+      "author": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc040-wumei-detail-03-v1.webp",
+      "source_title": "File:Pickledmai.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pickledmai.jpg",
+      "author": "Badagnani",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc040-wumei-detail-04-v1.webp",
+      "source_title": "File:Maesil (prunus mume) washed and stemmed.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Maesil_(prunus_mume)_washed_and_stemmed.jpg",
+      "author": "딸기맘양갱이",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc040-wumei-detail-05-v1.webp",
+      "source_title": "File:Buai khem.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Buai_khem.jpg",
+      "author": "Takeaway",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    }
+  ],
+  "bc046": [
+    {
+      "role": "hero",
+      "filename": "bc046-cheqianzi-hero-v1.webp",
+      "source_title": "File:Starr-130318-2625-Plantago major-seeds-Kilauea Pt NWR-Kauai (25207733525).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Starr-130318-2625-Plantago_major-seeds-Kilauea_Pt_NWR-Kauai_(25207733525).jpg",
+      "author": "Forest and Kim Starr",
+      "license": "CC BY 3.0 us",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+    },
+    {
+      "role": "specimen",
+      "filename": "bc046-cheqianzi-specimen-v1.webp",
+      "source_title": "File:Grote weegbree zaden (Plantago major subsp. major seeds).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Grote_weegbree_zaden_(Plantago_major_subsp._major_seeds).jpg",
+      "author": "Rasbak",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "role": "detail-01",
+      "filename": "bc046-cheqianzi-detail-01-v1.webp",
+      "source_title": "File:Plantain seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Plantain_seeds.jpg",
+      "author": "Denis Bastianelli",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+      "role": "detail-02",
+      "filename": "bc046-cheqianzi-detail-02-v1.webp",
+      "source_title": "File:Starr-130318-2625-Plantago major-seeds-Kilauea Pt NWR-Kauai (25207733525).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Starr-130318-2625-Plantago_major-seeds-Kilauea_Pt_NWR-Kauai_(25207733525).jpg",
+      "author": "Forest and Kim Starr",
+      "license": "CC BY 3.0 us",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+    },
+    {
+      "role": "detail-03",
+      "filename": "bc046-cheqianzi-detail-03-v1.webp",
+      "source_title": "File:Grote weegbree zaden (Plantago major subsp. major seeds).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Grote_weegbree_zaden_(Plantago_major_subsp._major_seeds).jpg",
+      "author": "Rasbak",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "role": "detail-04",
+      "filename": "bc046-cheqianzi-detail-04-v1.webp",
+      "source_title": "File:Plantain seeds.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Plantain_seeds.jpg",
+      "author": "Denis Bastianelli",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    {
+      "role": "detail-05",
+      "filename": "bc046-cheqianzi-detail-05-v1.webp",
+      "source_title": "File:Starr-130318-2625-Plantago major-seeds-Kilauea Pt NWR-Kauai (25207733525).jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Starr-130318-2625-Plantago_major-seeds-Kilauea_Pt_NWR-Kauai_(25207733525).jpg",
+      "author": "Forest and Kim Starr",
+      "license": "CC BY 3.0 us",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+    }
+  ]
+}
