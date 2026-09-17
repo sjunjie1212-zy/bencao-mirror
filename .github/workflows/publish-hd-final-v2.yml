@@ -1,0 +1,54 @@
+name: Publish BENCAO HD final v2
+
+on:
+  push:
+    branches: [publish-hd-final-run]
+    paths:
+      - '.github/workflows/publish-hd-final-v2.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Apply HD release transformation
+        run: python3 scripts/publish_hd_final.py
+
+      - name: Validate JavaScript
+        run: node --check app46.js
+
+      - name: Commit final release to main
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app46.js index.html bencao-version.txt images/ASSET_INDEX.md
+          if ! git diff --cached --quiet; then
+            git commit -m "release: publish 46-herb HD edition 4.0.0"
+            git push origin HEAD:main
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
