@@ -11,10 +11,10 @@ app=app.replace("const VERSION='4.0.0-beta.2';","const VERSION='4.0.0';")
 
 for n in range(2,7):
     sid=f'bc{n:03d}'
-    hero=f"'./images/{sid}-hero-vf1.webp',"
-    plate=f"'./images/{sid}-atlas-plate-vu1.jpg',"
-    if hero in app and plate not in app:
-        app=app.replace(hero,hero+plate,1)
+    needle=f"images:['./images/{sid}-hero-vf1.webp',"
+    repl=f"images:['./images/{sid}-hero-vf1.webp','./images/{sid}-atlas-plate-vu1.jpg',"
+    if needle in app and f"./images/{sid}-atlas-plate-vu1.jpg" not in app:
+        app=app.replace(needle,repl,1)
 
 marker='const T=['
 live_map={k:v for k,v in slugs.items() if 'bc007'<=k<='bc040'}
