@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate BENCAO 46-herb public beta bundle
+      - name: Validate BENCAO 46-herb HD bundle
         shell: bash
         run: |
           set -euo pipefail
@@ -36,6 +36,14 @@ jobs:
           test -s 404.html
           test -s bencao-version.txt
 
+          test "$(cat bencao-version.txt)" = "4.0.0"
+          grep -q '四十六味本草' index.html
+          grep -q '46 味可浏览本草' index.html
+          grep -q 'HD RELEASE' index.html
+          grep -q 'app46.js' index.html
+          grep -q "const VERSION='4.0.0'" app46.js
+          grep -q 'LIVE_ASSET_SLUGS' app46.js
+
           test ! -e app-parts
           test ! -e css-parts
           test ! -e styles-loader.js
@@ -44,17 +52,10 @@ jobs:
             exit 1
           fi
 
-          grep -q '四十六味本草' index.html
-          grep -q '46 味可浏览本草' index.html
-          grep -q 'app46.js' index.html
-
-          # BC.001–006 and BC.041–046 are explicit objects.
           for n in $(seq 1 6) $(seq 41 46); do
             id=$(printf 'bc%03d' "$n")
             grep -Fq "id:'${id}'" app46.js
           done
-
-          # BC.007–040 are generated from the compact pending-data table.
           for n in $(seq 7 40); do
             code=$(printf '%03d' "$n")
             grep -Fq "['${code}'" app46.js
@@ -67,19 +68,24 @@ jobs:
             test "$(dd if="$f" bs=1 skip=8 count=4 status=none)" = "WEBP"
           done
 
-          for pair in \
-            'bc041-mugua' \
-            'bc042-luohanguo' \
-            'bc043-sangshen' \
-            'bc044-suanzaoren' \
-            'bc045-taoren'; do
-            f="images/${pair}-hero-v1.avif"
-            test -s "$f"
-            head -c 32 "$f" | grep -a -q 'ftypavif'
-          done
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          plan=json.loads(Path('data/commons-asset-plan.json').read_text(encoding='utf-8'))
+          roles=['hero','specimen','detail-01','detail-02','detail-03','detail-04','detail-05']
+          for h in plan['herbs']:
+              for role in roles:
+                  p=Path('images')/f"{h['id']}-{h['slug']}-{role}-v1.webp"
+                  assert p.is_file() and p.stat().st_size >= 20000, p
+          for n,slug in [(41,'mugua'),(42,'luohanguo'),(43,'sangshen'),(44,'suanzaoren'),(45,'taoren')]:
+              for role in roles:
+                  p=Path('images')/f'bc{n:03d}-{slug}-{role}-v1.avif'
+                  assert p.is_file() and p.stat().st_size >= 20000, p
+          print('46-herb HD validation passed')
+          PY
 
           test -s images/_manifests/manifest-bc041-bc045.csv
-          grep -q 'PUBLIC BETA' index.html
+          test -s images/_manifests/manifest-bc007-bc040-bc046.csv
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
