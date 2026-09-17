@@ -38,3 +38,5 @@ jobs:
           git add app46.js index.html bencao-version.txt images/ASSET_INDEX.md
           git commit -m "release: publish 46-herb HD edition 4.0.0"
           git push origin HEAD:main
+
+# rerun after specimen-array syntax fix
