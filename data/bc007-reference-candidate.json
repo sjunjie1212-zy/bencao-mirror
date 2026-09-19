@@ -4,16 +4,19 @@
   "status": "reference-review-only",
   "source_page": "https://commons.wikimedia.org/wiki/File:Dried_honeysuckle.jpg",
   "source_file": "Dried honeysuckle.jpg",
-  "photographer": "pending source metadata verification",
-  "license": "pending source metadata verification",
-  "license_url": "pending source metadata verification",
-  "reference_warning": "Image is categorized as Lonicera japonica and dried flower texture; actual botanical material, author, license and hero composition still require inspection.",
-  "planned_use": "Source examination only; do not auto-publish or mark approved.",
-  "source_identity_status": "needs high-resolution visual and metadata audit",
+  "photographer": "François Nguyen",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "reference_warning": "Full-res reviewed: dense dried floral material photo, lacking isolated buds, clean breathing room and scale; rejected as Hero. May be reassessed solely as detail texture reference, not approved.",
+  "planned_use": "Hero rejected; retain audit reference only. No publication/promotion.",
+  "source_identity_status": "Commons categorized as Lonicera japonica; no independent voucher / lot certification",
   "retrieved_at": "2026-09-20",
   "previous_reference": {
     "source_page": "https://commons.wikimedia.org/wiki/File:Dried_Chrysanthemum_and_Dried_Honeysuckles.jpg",
     "outcome": "reject_as_Hero: mixed chrysanthemums, plastic bag and red store labels cannot be cropped out without compromising subject/scale",
     "audit": "source.jpg reviewed at full resolution; not approved"
-  }
+  },
+  "source_width": 2448,
+  "source_height": 2448,
+  "audit_record": "images/_qa/bc007-hero-source-screen-2026-09-20.md"
 }
