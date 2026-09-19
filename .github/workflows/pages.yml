@@ -43,6 +43,11 @@ jobs:
           grep -q 'app46.js' index.html
           grep -q "const VERSION='4.0.0'" app46.js
           grep -q 'LIVE_ASSET_SLUGS' app46.js
+          node --check app46.js
+          # Six flagged herb sets must remain hidden until individually approved.
+          grep -Fq "const QC_HOLD_IDS=new Set(['bc041','bc042','bc043','bc044','bc045','bc046'])" app46.js
+          grep -Fq "h.hero=null;h.images=[];" app46.js
+          grep -Fq "影像复核中" app46.js
 
           test ! -e app-parts
           test ! -e css-parts
