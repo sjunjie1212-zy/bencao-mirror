@@ -52,4 +52,9 @@ for herb in herbs:
 assert "h.assetStatus='qc_hold';h.hero=null;h.images=[];" in app, "Quarantine logic missing"
 assert "h.assetStatus='qa_preview';" in app, "Unverified preview label missing"
 assert "46 味均已接入高清图集" not in index, "False complete-HD claim"
+for legacy in ("import-b64-assets.yml", "import-visual-assets.yml", "import-commons-assets.yml"):
+    text = (root / ".github/workflows" / legacy).read_text(encoding="utf-8")
+    assert "if: ${{ false }}" in text, f"Unreviewed direct importer reenabled: {legacy}"
+assert (root / "scripts/stage_visual_candidates.py").is_file(), "Candidate-only importer missing"
+assert (root / "images/_candidates/README.md").is_file(), "Candidate evidence policy missing"
 print("QA gate passed: 46 herbs / 322 slots; A32+B6 held; C8 marked unverified")
