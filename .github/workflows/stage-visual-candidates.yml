@@ -1,0 +1,51 @@
+name: Stage unapproved BENCAO visual candidates
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - 'asset-import/candidates/*.zip'
+      - 'scripts/stage_visual_candidates.py'
+      - '.github/workflows/stage-visual-candidates.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: visual-candidate-staging
+  cancel-in-progress: false
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate staging script
+        run: python3 -m py_compile scripts/stage_visual_candidates.py
+
+      - name: Stage to unapproved-only directory
+        run: python3 scripts/stage_visual_candidates.py
+
+      - name: Commit candidate files only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A images/_candidates asset-import/candidates
+          if git diff --cached --quiet; then
+            echo "No new candidates."
+            exit 0
+          fi
+          if git diff --cached --name-only | grep -vE '^(images/_candidates/|asset-import/candidates/)' ; then
+            echo "Unexpected formal-site changes in candidate staging" >&2
+            exit 1
+          fi
+          git commit -m "qa: stage image candidates without public approval"
+          git pull --rebase origin main
+          git push origin HEAD:main
