@@ -41,6 +41,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p asset-import/candidates
           git add -A images/_candidates asset-import/candidates
           if git diff --cached --quiet; then
             echo "No new candidates."
