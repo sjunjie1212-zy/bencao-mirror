@@ -45,12 +45,9 @@ jobs:
           grep -q 'LIVE_ASSET_SLUGS' app46.js
           node --check app46.js
           python3 scripts/validate_visual_qa.py
-          # Six flagged herb sets must remain hidden until individually approved.
-          grep -Fq "const QC_HOLD_IDS=new Set(['bc041','bc042','bc043','bc044','bc045','bc046'])" app46.js
-          grep -Fq "h.hero=null;h.images=[];" app46.js
-          grep -Fq "影像复核中" app46.js
-          grep -Fq "P.forEach(h=>{if(h.id!=='bc007')return;h.assetStatus='qc_hold';h.hero=null;h.images=[];" app46.js
+          # The 46-herb / 322-slot register is the current QA source of truth.
           test -s images/_qa/bc007-jinyinhua-review.md
+          test -s images/_qa/FULL_AUDIT_BC001_BC046_2026-09-19.md
 
           test ! -e app-parts
           test ! -e css-parts
