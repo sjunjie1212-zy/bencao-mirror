@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate BENCAO 46-herb HD bundle
+      - name: Validate BENCAO image QA and site integrity
         shell: bash
         run: |
           set -euo pipefail
@@ -44,6 +44,7 @@ jobs:
           grep -q "const VERSION='4.0.0'" app46.js
           grep -q 'LIVE_ASSET_SLUGS' app46.js
           node --check app46.js
+          python3 scripts/validate_visual_qa.py
           # Six flagged herb sets must remain hidden until individually approved.
           grep -Fq "const QC_HOLD_IDS=new Set(['bc041','bc042','bc043','bc044','bc045','bc046'])" app46.js
           grep -Fq "h.hero=null;h.images=[];" app46.js
@@ -88,7 +89,7 @@ jobs:
               for role in roles:
                   p=Path('images')/f'bc{n:03d}-{slug}-{role}-v1.avif'
                   assert p.is_file() and p.stat().st_size >= 20000, p
-          print('46-herb HD validation passed')
+          print('Historical image files exist (not content- or identity-approved)')
           PY
 
           test -s images/_manifests/manifest-bc041-bc045.csv
