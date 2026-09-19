@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#ECE9E1" />
-  <meta name="description" content="本草镜：从屏幕回到草木的数字本草观察体验。高清公开版。" />
-  <meta property="og:title" content="本草镜 BENCAO MIRROR｜高清版" />
-  <meta property="og:description" content="浏览本草材料图集，从整体到细节认识真实草木。" />
-  <title>本草镜 BENCAO MIRROR｜高清版</title>
+  <meta name="description" content="本草镜图像整改测试版：保留 46 味本草目录，暂停展示问题图集。" />
+  <meta property="og:title" content="本草镜 BENCAO MIRROR｜影像审核版" />
+  <meta property="og:description" content="46 味本草条目保留；问题图集暂停展示，其余仅为未验收的 AI 原型预览。" />
+  <title>本草镜 BENCAO MIRROR｜影像审核版</title>
   <link rel="stylesheet" href="./styles.css?v=365vf3" />
   <link rel="stylesheet" href="./beta.css?v=400b1" />
   <link rel="stylesheet" href="./beta46.css?v=400b3" />
@@ -22,7 +22,7 @@
       <button type="button" data-go-catalogue>本草</button>
       <button type="button" data-open-about>关于测试版</button>
     </nav>
-    <div class="nav-meta">HD RELEASE · 4.0</div>
+    <div class="nav-meta">QA REVIEW · 4.0</div>
   </header>
 
   <main id="app">
@@ -39,12 +39,12 @@
       <div class="catalogue-main">
         <div class="catalogue-heading">
           <div>
-            <p class="eyebrow">HD RELEASE / VISUAL ARCHIVE</p>
+            <p class="eyebrow">QA REVIEW / VISUAL ARCHIVE</p>
             <h2>四十六味本草</h2>
           </div>
-          <p>BC.001–046 条目均可浏览。<br>BC.041–046 的旧影像存在身份或形态风险，已暂停展示并重新核验。</p>
+          <p>BC.001–046 共 46 味条目保留。<br>38 味旧图暂停展示，另 8 味仅提供未验收的视觉原型预览。</p>
         </div>
-        <div class="beta-status"><span>高清版</span><b>图像审查进行中：BC.041–046 旧图集已隔离；其他图集也需逐张复核。现有图片为 AI 生成，并非实拍记录。</b></div>
+        <div class="beta-status"><span>整改测试版</span><b>严禁将原型图当作药材鉴定依据：38 味旧图已隔离；其余 8 味仅作未验收的 AI 视觉预览。正式通过验收：0/46 味。</b></div>
         <div class="herb-grid" id="herbGrid"></div>
       </div>
     </section>
@@ -54,11 +54,11 @@
   <dialog id="aboutDialog" class="sheet-dialog">
     <button class="dialog-close" type="button" data-dialog-close aria-label="关闭">×</button>
     <p class="eyebrow">ABOUT / PUBLIC BETA</p>
-    <h2>这是本草镜的 46 味高清公开版。</h2>
-    <p class="dialog-lead">本草目录保留 BC.001–046 全部条目。BC.041–046 的旧图存在药材主题或形态风险，已暂停展示并重新验收；其余图集也不能仅凭文件数量判定主题准确。</p>
+    <h2>这是本草镜的图像纠错公开测试版。</h2>
+    <p class="dialog-lead">本草目录保留 BC.001–046 全部 46 味条目。32 味已发现显著错图或部位偏题，6 味存在较高的身份或结构疑点：这 38 味图集已经隔离。剩余 8 味仅作为未验收的 AI 原型预览，不能用于辨别药材。</p>
     <div class="about-rule"></div>
     <p>本草镜不是在线问诊、处方或药材质量鉴定工具。页面中的传统本草名称、来源与药用部位用于文化与材料观察；如涉及用药、疾病或个人健康决策，请使用可靠的专业医疗信息来源。</p>
-    <p><strong>页面上的影像全部是 AI 生成图像，没有一张是实拍药材记录。</strong>当前展示的图像均标有「AI 生成影像」；BC.041–046 的旧图集已经暂停展示。其中大部分以 Wikimedia Commons 的公开许可照片为参考源，参考源的原作者与许可逐条列在<a href="./credits.html">影像来源与署名</a>；BC.001–BC.006 与 BC.041–BC.045 共 11 味的参考源尚未记录，credits 页单独列出。</p>
+    <p><strong>页面上的影像全部是 AI 生成图像，没有一张是实拍药材记录。</strong>当前展示的 AI 原型均标有「AI 生成影像」和未验收声明；有风险的 38 味旧图集已经暂停展示。其中大部分以 Wikimedia Commons 的公开许可照片为参考源，参考源的原作者与许可逐条列在<a href="./credits.html">影像来源与署名</a>；BC.001–BC.006 与 BC.041–BC.045 共 11 味的参考源尚未记录，credits 页单独列出。</p>
     <p class="beta-about-note">如果你是第一次使用：任选一味进入条目，看看你会不会自然地继续翻到下一味。把卡住你的地方直接告诉分享给你这个链接的人即可。</p>
   </dialog>
 
@@ -70,10 +70,10 @@
   </dialog>
 
   <footer class="site-footer">
-    <p>全部影像为 AI 生成，不替代植物学鉴定、药材质量鉴别或医疗建议。</p>
-    <p><a href="./credits.html">影像来源与署名</a> · 46 味条目 · BC.041–046 影像复核中 · 在展示图像均为 AI 生成</p>
+    <p>当前展示影像是未经正式验收的 AI 原型，不是实拍标本，不可用于药材识别、鉴别或用药决策。</p>
+    <p><a href="./credits.html">影像来源与署名</a> · 46 味条目 · 38 味图集隔离 · 8 味未验收预览 · 0 味正式通过验收</p>
   </footer>
 
-  <script src="./app46.js?v=400hd3-qc1"></script>
+  <script src="./app46.js?v=400qa2"></script>
 </body>
 </html>
