@@ -1,9 +1,8 @@
 name: Import base64 visual assets
 
+# Disabled for image QA remediation. Historical importer retained for audit.
+# Do not enable without candidate staging and per-image approval gate.
 on:
-  push:
-    paths:
-      - 'asset-import/*.b64-ready'
   workflow_dispatch:
 
 permissions:
@@ -11,6 +10,7 @@ permissions:
 
 jobs:
   import-assets:
+    if: ${{ false }} # legacy direct-to-formal import is prohibited
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
