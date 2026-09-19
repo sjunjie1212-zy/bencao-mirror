@@ -48,6 +48,8 @@ jobs:
           grep -Fq "const QC_HOLD_IDS=new Set(['bc041','bc042','bc043','bc044','bc045','bc046'])" app46.js
           grep -Fq "h.hero=null;h.images=[];" app46.js
           grep -Fq "影像复核中" app46.js
+          grep -Fq "P.forEach(h=>{if(h.id!=='bc007')return;h.assetStatus='qc_hold';h.hero=null;h.images=[];" app46.js
+          test -s images/_qa/bc007-jinyinhua-review.md
 
           test ! -e app-parts
           test ! -e css-parts
