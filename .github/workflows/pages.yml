@@ -39,7 +39,7 @@ jobs:
           test "$(cat bencao-version.txt)" = "4.0.0"
           grep -q '四十六味本草' index.html
           grep -q '46 味可浏览本草' index.html
-          grep -q 'HD RELEASE' index.html
+          grep -q 'QA REVIEW' index.html
           grep -q 'app46.js' index.html
           grep -q "const VERSION='4.0.0'" app46.js
           grep -q 'LIVE_ASSET_SLUGS' app46.js
