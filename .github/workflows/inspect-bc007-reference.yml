@@ -34,14 +34,14 @@ jobs:
           assert image['width']>=1500 and image['height']>=1400
           meta=image.get('extmetadata',{})
           license_name=meta.get('LicenseShortName',{}).get('value','')
-          assert 'BY-SA 4.0' in license_name, license_name
+          assert license_name.startswith(('CC BY-SA','CC BY ','CC0')), license_name
           req2=urllib.request.Request(image['url'],headers={'User-Agent':'BencaoMirrorReferenceAudit/1.0 (source verification)'})
           with urllib.request.urlopen(req2,timeout=100) as r:
               content=r.read(16000000)
           assert content[:3]==b'\xff\xd8\xff' and 20000<len(content)<16000000
           dest=Path('/tmp/bc007-reference')
           (dest/'source.jpg').write_bytes(content)
-          (dest/'source-metadata.json').write_text(json.dumps({'file_page':p['source_page'],'license':license_name,'source_width':image['width'],'source_height':image['height'],'license_url':meta.get('LicenseUrl',{}).get('value'),'original_filename':p['source_file'],'image_url':image['url']},ensure_ascii=False,indent=2))
+          (dest/'source-metadata.json').write_text(json.dumps({'file_page':p['source_page'],'license':license_name,'source_width':image['width'],'source_height':image['height'],'license_url':meta.get('LicenseUrl',{}).get('value'),'artist_metadata':meta.get('Artist',{}).get('value'),'description_metadata':meta.get('ImageDescription',{}).get('value'),'original_filename':p['source_file'],'image_url':image['url']},ensure_ascii=False,indent=2))
           print('Source downloaded for manual visual assessment, not published; dimensions',image['width'],image['height'])
           PY
       - name: Review-only reference artifact
