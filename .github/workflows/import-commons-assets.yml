@@ -1,11 +1,8 @@
 name: Import missing BENCAO HD assets
 
+# Suspended: automated source matching and 7/7 file-count checks did not validate
+# medicinal part, taxon identity, or cross-herb contamination. Retained for audit only.
 on:
-  push:
-    paths:
-      - 'data/commons-asset-plan.json'
-      - 'scripts/import_commons_assets.py'
-      - '.github/workflows/import-commons-assets.yml'
   workflow_dispatch:
 
 permissions:
@@ -17,6 +14,7 @@ concurrency:
 
 jobs:
   import:
+    if: ${{ false }} # disabled until per-image botanical approval is implemented
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
