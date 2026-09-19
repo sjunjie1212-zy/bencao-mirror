@@ -27,6 +27,9 @@ herb({assetStatus:'formal_hd_asset',id:'bc046',no:'BC.046',name:'车前子',piny
 // Keep historical binaries for comparison; do not expose them as approved imagery.
 const QC_HOLD_IDS=new Set(['bc041','bc042','bc043','bc044','bc045','bc046']);
 T.forEach(h=>{if(!QC_HOLD_IDS.has(h.id))return;h.assetStatus='qc_hold';h.hero=null;h.images=[];h.intro='旧版影像在主题一致性或药材形态检查中未通过，现已撤下，正在重新核对和制作。';h.note='本条目的旧版图集未通过逐张验收，暂不对外展示。保留条目仅供浏览目录，不应凭此前图像进行药材识别。';});
+// BC.007 source audit: all seven images derive from living flower/vine photos,
+// not from documented dried medicinal buds; one source is only identified to genus.
+P.forEach(h=>{if(h.id!=='bc007')return;h.assetStatus='qc_hold';h.hero=null;h.images=[];h.intro='金银花旧图集采用活体花朵及花枝摄影，与干燥金银花药材标本不符；旧图已撤下，正在逐张重新验收。';h.note='旧版 7 张均未通过药用部位/参考来源验收，其中部分参考照片未明确到忍冬这一药典基源。请勿使用旧图判断金银花药材形态。';});
 const HERBS=[...F,...P,...T];
 // 46 味的影像全部来自生成式流程，没有一张是实拍记录。按项目红线，AI 生成影像
 // 必须对使用者可见标注，不能只写在仓库文档里。这里给全部条目挂上标记，
